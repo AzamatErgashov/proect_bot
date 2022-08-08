@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><link href="Cloud%20Shell_files/css.css" rel="stylesheet" nonce=""><link rel="stylesheet" href="Cloud%20Shell_files/m=cloudshell.css" nonce=""><link rel="stylesheet" href="Cloud%20Shell_files/icon.css" nonce=""><link rel="manifest" href="https://shell.cloud.google.com/manifest.json" crossorigin="use-credentials"><script src="Cloud%20Shell_files/cb=gapi.loaded_1" nonce="" async=""></script><script src="Cloud%20Shell_files/cb=gapi.loaded_0" nonce="" async=""></script><script nonce="">
+          window.CLOSURE_NO_DEPS = true;
+        </script><script nonce="">var CSH_SERVER_VARS = "\x5b\x5b\x22azamatergashov958@gmail.com\x22,\x220\x22,\x22Azamat\x22,\x22Ergashov\x22\x5d,\x5b\x22https:\/\/shell.cloud.google.com\x22,\x22https:\/\/cloudshell.clients6.google.com\x22,\x22cloud-sshrelay-server_20220801_RC01\x22,null,\x22618104708054-9r9s1c4alg36erliucho9t52n32n6dgq.apps.googleusercontent.com\x22,\x22AIzaSyBj8JySZNOCTBCnK2w-CHlwJnpwcQkQ7Hk\x22,\x22https:\/\/cloudresourcemanager.clients6.google.com\x22,\x5bnull,null,null,\x22https:\/\/www.gstatic.com\/devops\/connect\/loader\/tool_library.js\x22\x5d,\x22email https:\/\/www.googleapis.com\/auth\/appengine.admin https:\/\/www.googleapis.com\/auth\/bigquery https:\/\/www.googleapis.com\/auth\/compute https:\/\/www.googleapis.com\/auth\/devstorage.full_control https:\/\/www.googleapis.com\/auth\/devstorage.read_only https:\/\/www.googleapis.com\/auth\/drive https:\/\/www.googleapis.com\/auth\/ndev.cloudman https:\/\/www.googleapis.com\/auth\/cloud-platform https:\/\/www.googleapis.com\/auth\/sqlservice.admin https:\/\/www.googleapis.com\/auth\/prediction https:\/\/www.googleapis.com\/auth\/projecthosting https:\/\/www.googleapis.com\/auth\/source.full_control https:\/\/www.googleapis.com\/auth\/source.read_only https:\/\/www.googleapis.com\/auth\/source.read_write\x22,60,\x22https:\/\/workstations.googleapis.com\x22\x5d,\x5bnull,null,null,null,null,null,\x5b\x5bnull,44569313\x5d,\x5bnull,44537330\x5d,\x5bnull,44501922\x5d,\x5bnull,18800188\x5d,\x5bnull,44490095\x5d,\x5bnull,18800494\x5d\x5d,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,1,null,null,null,null,null,null,null,1\x5d,null,\x5b\x5d,\x5b\x5b\x22gcr.io\/cloudshell-images\/cloudshell:latest\x22,\x22gcr.io\/cloudrun\/button:latest\x22,\x22gcr.io\/ds-artifacts-cloudshell\/deploystack_custom_image\x22,\x22gcr.io\/graphite-cloud-shell-images\/terraform:latest\x22,\x22gcr.io\/stackdriver-sandbox-230822\/cloudshell-image:latest\x22\x5d,\x5b\x22github.com\/google\/\x22,\x22github.com\/googleapis\/\x22,\x22github.com\/googlecloudplatform\/\x22,\x22github.com\/googlemaps\/\x22,\x22github.com\/terraform-google-modules\/\x22,\x22go.googlesource.com\/\x22\x5d,\x5b\x5d\x5d,\x5b\x5d,\x5b\x5b\x22github.com\/OnlineHacKing\/\x22,\x22github.com\/Bhaviktutorials\/\x22,\x22github.com\/sherlock-project\/\x22\x5d,\x5b\x22github.com\/JoelGMSec\/Cloudtopolis\x22\x5d\x5d\x5d"; var CSH_LOAD_T0 = Date.now();</script><script nonce="">function _DumpException(e) {}</script><!-- base href="https://shell.cloud.google.com/" --><title>Cloud Shell</title><style>[_nghost-oyp-c260], .csh-app[_ngcontent-oyp-c260] {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+editor[_ngcontent-oyp-c260] {
+  width: 100%;
+}</style><script type="text/javascript" charset="UTF-8" nonce="" src="Cloud%20Shell_files/api.js" gapi_processed="true"></script><style>[_nghost-oyp-c64] {
+  position: fixed;
+  width: 0;
+  height: 0;
+  z-index: 99999;
+}
+
+div[_ngcontent-oyp-c64] {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.too-long[_ngcontent-oyp-c64] {
+  background: rgba(0,0,0,.8);
+}
+
+.not-too-long[_ngcontent-oyp-c64] {
+  background: rgba(0,0,0,.5);
+}
+
+.not-too-long[_ngcontent-oyp-c64]   mat-icon[_ngcontent-oyp-c64] {
+  background: black;
+  opacity: .8;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 30px;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+p[_ngcontent-oyp-c64] {
+  color: white;
+}
+
+a.gmat-button[_ngcontent-oyp-c64] {
+  line-height: 36px;
+}
+
+mat-icon.small-icon[_ngcontent-oyp-c64] {
+  height: 15px;
+  width: 15px;
+  font-size: 15px;
+  color: white;
+  margin-left: 5px;
+}
+
+.close-button[_ngcontent-oyp-c64] {
+  color: white;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}</style><style>.loading-indicator[_ngcontent-oyp-c119] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.mat-icon[_ngcontent-oyp-c119] {
+  width: 52px;
+  height: 52px;
+  margin-bottom: 20px;
+}</style><style>.mat-icon{-webkit-user-select:none;user-select:none;background-repeat:no-repeat;display:inline-block;fill:currentColor;height:24px;width:24px;overflow:hidden}.mat-icon.mat-icon-inline{font-size:inherit;height:inherit;line-height:inherit;width:inherit}.mat-icon.mat-ligature-font[fontIcon]::before{content:attr(fontIcon)}[dir=rtl] .mat-icon-rtl-mirror{transform:scale(-1, 1)}.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon,.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon{display:block}.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon-button .mat-icon,.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon-button .mat-icon{margin:auto}
+</style><style>.mat-progress-spinner{display:block;position:relative;overflow:hidden}.mat-progress-spinner svg{position:absolute;transform:rotate(-90deg);top:0;left:0;transform-origin:center;overflow:visible}.mat-progress-spinner circle{fill:transparent;transition:stroke-dashoffset 225ms linear}.cdk-high-contrast-active .mat-progress-spinner circle{stroke:CanvasText}.mat-progress-spinner[mode=indeterminate] svg{animation:mat-progress-spinner-linear-rotate 2000ms linear infinite}.mat-progress-spinner[mode=indeterminate] circle{transition-property:stroke;animation-duration:4000ms;animation-timing-function:cubic-bezier(0.35, 0, 0.25, 1);animation-iteration-count:infinite}.mat-progress-spinner._mat-animation-noopable svg,.mat-progress-spinner._mat-animation-noopable circle{animation:none;transition:none}@keyframes mat-progress-spinner-linear-rotate{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@keyframes mat-progress-spinner-stroke-rotate-100{0%{stroke-dashoffset:268.606171575px;transform:rotate(0)}12.5%{stroke-dashoffset:56.5486677px;transform:rotate(0)}12.5001%{stroke-dashoffset:56.5486677px;transform:rotateX(180deg) rotate(72.5deg)}25%{stroke-dashoffset:268.606171575px;transform:rotateX(180deg) rotate(72.5deg)}25.0001%{stroke-dashoffset:268.606171575px;transform:rotate(270deg)}37.5%{stroke-dashoffset:56.5486677px;transform:rotate(270deg)}37.5001%{stroke-dashoffset:56.5486677px;transform:rotateX(180deg) rotate(161.5deg)}50%{stroke-dashoffset:268.606171575px;transform:rotateX(180deg) rotate(161.5deg)}50.0001%{stroke-dashoffset:268.606171575px;transform:rotate(180deg)}62.5%{stroke-dashoffset:56.5486677px;transform:rotate(180deg)}62.5001%{stroke-dashoffset:56.5486677px;transform:rotateX(180deg) rotate(251.5deg)}75%{stroke-dashoffset:268.606171575px;transform:rotateX(180deg) rotate(251.5deg)}75.0001%{stroke-dashoffset:268.606171575px;transform:rotate(90deg)}87.5%{stroke-dashoffset:56.5486677px;transform:rotate(90deg)}87.5001%{stroke-dashoffset:56.5486677px;transform:rotateX(180deg) rotate(341.5deg)}100%{stroke-dashoffset:268.606171575px;transform:rotateX(180deg) rotate(341.5deg)}}
+</style><style mat-spinner-animation="16">
+ @keyframes mat-progress-spinner-stroke-rotate-16 {
+    0%      { stroke-dashoffset: 17.90707812546182;  transform: rotate(0); }
+    12.5%   { stroke-dashoffset: 3.7699111843077517;    transform: rotate(0); }
+    12.5001%  { stroke-dashoffset: 3.7699111843077517;    transform: rotateX(180deg) rotate(72.5deg); }
+    25%     { stroke-dashoffset: 17.90707812546182;  transform: rotateX(180deg) rotate(72.5deg); }
+
+    25.0001%   { stroke-dashoffset: 17.90707812546182;  transform: rotate(270deg); }
+    37.5%   { stroke-dashoffset: 3.7699111843077517;    transform: rotate(270deg); }
+    37.5001%  { stroke-dashoffset: 3.7699111843077517;    transform: rotateX(180deg) rotate(161.5deg); }
+    50%     { stroke-dashoffset: 17.90707812546182;  transform: rotateX(180deg) rotate(161.5deg); }
+
+    50.0001%  { stroke-dashoffset: 17.90707812546182;  transform: rotate(180deg); }
+    62.5%   { stroke-dashoffset: 3.7699111843077517;    transform: rotate(180deg); }
+    62.5001%  { stroke-dashoffset: 3.7699111843077517;    transform: rotateX(180deg) rotate(251.5deg); }
+    75%     { stroke-dashoffset: 17.90707812546182;  transform: rotateX(180deg) rotate(251.5deg); }
+
+    75.0001%  { stroke-dashoffset: 17.90707812546182;  transform: rotate(90deg); }
+    87.5%   { stroke-dashoffset: 3.7699111843077517;    transform: rotate(90deg); }
+    87.5001%  { stroke-dashoffset: 3.7699111843077517;    transform: rotateX(180deg) rotate(341.5deg); }
+    100%    { stroke-dashoffset: 17.90707812546182;  transform: rotateX(180deg) rotate(341.5deg); }
+  }
+</style><style>[_nghost-oyp-c259] {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  width: 100%;
+}
+
+#cloudshell[_ngcontent-oyp-c259] {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  min-height: 0;
+  overflow: hidden;
+}
+
+devshell[_ngcontent-oyp-c259] {
+  flex: 1;
+}
+
+header-title[_ngcontent-oyp-c259] {
+  min-width: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font: 400 18px/24px Google Sans,Helvetica Neue,sans-serif;
+  letter-spacing: normal;
+}
+
+mat-icon.cs-icon[_ngcontent-oyp-c259] {
+  height: 48px;
+  line-height: 48px;
+  font-size: 32px;
+}
+
+visibility-button[_ngcontent-oyp-c259] {
+  margin: 0 10px;
+}
+
+visibility-toggle[_ngcontent-oyp-c259] {
+  margin-left: 5px;
+}
+
+.zero-state-controls[_ngcontent-oyp-c259] {
+  display: flex;
+  justify-content: center;
+}
+
+.main-content[_ngcontent-oyp-c259] {
+  display: flex;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+#walkthrough-container.open[_ngcontent-oyp-c259] {
+  border-left: 1px solid #dadce0;
+}</style><style>mat-toolbar[_ngcontent-oyp-c135] {
+  height: 48px;
+  min-height: 48px;
+  display: flex;
+  color: rgba(95,99,104,100);
+  background-color: white;
+  padding: 0;
+  border-bottom: 1px solid #e8eaed;
+}
+
+.toolbar-container[_ngcontent-oyp-c135] {
+  height: 48px;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  color: rgba(95,99,104,100);
+  background-color: white;
+  padding: 0 12px;
+  border-bottom: 1px solid #e8eaed;
+  box-sizing: border-box;
+}
+
+mat-divider[_ngcontent-oyp-c135] {
+  margin: 5px;
+  height: 60%;
+  border-right-color: #ccc;
+}
+
+mat-icon.cs-icon[_ngcontent-oyp-c135] {
+  height: 32px;
+  min-width: 32px;
+  line-height: 32px;
+  margin-left: 5px;
+  margin-right: 12px;
+  font-stretch: 100%;
+}
+
+new-tab-menu[_ngcontent-oyp-c135] {
+  margin-bottom: 5px;
+}
+
+.spacer[_ngcontent-oyp-c135] {
+  flex-grow: 1;
+}
+
+.title[_ngcontent-oyp-c135] {
+  min-width: 150px;
+}
+
+.view-controls-container[_ngcontent-oyp-c135] {
+  margin-top: 1px;
+}</style><style>.selected[_ngcontent-oyp-c159] {
+  color: #1a73e8;
+  background-color: #e8f0fe;
+}</style><style>[_nghost-oyp-c134] {
+  display: block;
+  width: 1px;
+  margin: 0 10px;
+  height: 21px;
+  border: 0 solid #e0e0e0;
+  border-right-width: 1px;
+}</style><style>.menu-padding[_ngcontent-oyp-c157] {
+  display: block;
+  padding: 0 16px;
+}
+
+.grey-text[_ngcontent-oyp-c157] {
+  opacity: 0.7;
+}
+
+.untrusted-menu-item[_ngcontent-oyp-c157] {
+  display: flex;
+  align-items: center;
+  height: 32px;
+}
+
+.warning-icon[_ngcontent-oyp-c157] {
+  margin-right: 14px;
+}
+
+.icon-badge[_ngcontent-oyp-c157] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 12px;
+}
+
+.ephemeral-mode-text[_ngcontent-oyp-c157] {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.image-url-item[_ngcontent-oyp-c157] {
+  margin: 8px 0;
+}
+
+.image-url[_ngcontent-oyp-c157] {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  outline-color: rgba(0, 0, 0, 0.12);
+}
+
+.image-url[_ngcontent-oyp-c157]   a[_ngcontent-oyp-c157] {
+  text-decoration: none;
+}</style><style>.mat-menu-item.disable-hover[_ngcontent-oyp-c233]:hover {
+  background:inherit;
+}
+
+.mat-menu-item.disable-hover[_ngcontent-oyp-c233] {
+  cursor: inherit;
+}</style><style>button[_ngcontent-oyp-c257] {
+  vertical-align: middle;
+}
+
+
+
+button.mat-icon-button.large[_ngcontent-oyp-c257] {
+  width: 44px;
+  height: 44px;
+}</style><style>[_nghost-oyp-c243] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.load-overlay[_ngcontent-oyp-c243] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: white;
+  position: absolute;
+  z-index: 2;
+}
+
+.load-card[_ngcontent-oyp-c243] {
+  width: 400px;
+  min-height: 450px;
+}
+
+.flex-col[_ngcontent-oyp-c243] {
+  display: flex;
+  flex-direction: column
+}
+
+.flex-row[_ngcontent-oyp-c243] {
+  display: flex;
+}
+
+.header[_ngcontent-oyp-c243] {
+  background: #f8f9f9;
+  height: 250px;
+  max-height: 250px;
+  transform: translate3d(0,0,0);
+  overflow: hidden;
+}
+
+.header-content[_ngcontent-oyp-c243] {
+  margin: 24px;
+}
+
+.header-image[_ngcontent-oyp-c243] {
+  width: 120px;
+  padding-bottom: 16px;
+}
+
+.header-description[_ngcontent-oyp-c243] {
+  color: #5f6368;
+  padding-top: 8px;
+}
+
+.load-warning-container[_ngcontent-oyp-c243] {
+  background: #f2f2f2;
+  margin: 8px 16px 0 16px;
+}
+
+.error-container[_ngcontent-oyp-c243] {
+  background-color: #fce8e6; 
+}
+
+.loading-steps[_ngcontent-oyp-c243] {
+  margin: 24px 24px 12px 24px;
+}
+
+.load-detail[_ngcontent-oyp-c243] {
+  overflow-y: auto;
+}
+
+.load-warning[_ngcontent-oyp-c243] {
+  margin: 0 8px;
+  padding: 6px 0;
+}
+
+.warning-message[_ngcontent-oyp-c243] {
+  
+  color: #3c4043;
+}
+
+.warning-text[_ngcontent-oyp-c243] {
+  padding-left: 16px;
+}
+
+.warning-icon[_ngcontent-oyp-c243] {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+  padding-top: 4px;
+}
+
+.load-step[_ngcontent-oyp-c243] {
+  padding: 0 0 16px 16px;
+}
+
+.pending[_ngcontent-oyp-c243] {
+  color: #80868b;
+}
+
+.error[_ngcontent-oyp-c243] {
+  color: #c5221f; 
+}
+
+.complete[_ngcontent-oyp-c243] {
+  color: #188038;
+}
+
+.load-step-icon[_ngcontent-oyp-c243] {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+  padding-top: 2px;
+}
+
+.no-icon-pending[_ngcontent-oyp-c243] {
+  width: 16px;
+  height: 16px;
+}
+
+
+
+.compact-1[_ngcontent-oyp-c243]   .load-card[_ngcontent-oyp-c243] {
+  min-height: 250px;
+  width: 800px;
+  flex-direction: row;
+}
+
+.compact-1[_ngcontent-oyp-c243]   .load-detail[_ngcontent-oyp-c243], .compact-1[_ngcontent-oyp-c243]   .header[_ngcontent-oyp-c243] {
+  width: 400px;
+  max-height: 250px;
+  min-height: 250px;
+}
+
+
+
+.compact-2[_ngcontent-oyp-c243]   .load-card[_ngcontent-oyp-c243] {
+  min-height: 150px;
+  width: 800px;
+  flex-direction: row;
+}
+
+.compact-2[_ngcontent-oyp-c243]   .load-detail[_ngcontent-oyp-c243], .compact-2[_ngcontent-oyp-c243]   .header[_ngcontent-oyp-c243] {
+  flex-direction: row;
+  max-height: 160px;
+  min-height: 160px;
+  flex: 1 1 0;
+}
+
+.compact-2[_ngcontent-oyp-c243]   .header-image[_ngcontent-oyp-c243], .compact-2[_ngcontent-oyp-c243]   .header.warning[_ngcontent-oyp-c243] {
+  display: none;
+}
+
+.compact-2[_ngcontent-oyp-c243]   .load-step[_ngcontent-oyp-c243] {
+  padding: 0 0 8px 16px;
+}
+
+.compact-2[_ngcontent-oyp-c243]   .load-warning-container[_ngcontent-oyp-c243], .compact-2[_ngcontent-oyp-c243]   .loading-steps[_ngcontent-oyp-c243] {
+  flex: 1 1 0;
+  margin: 0;
+  padding: 24px;
+}
+
+.compact-2[_ngcontent-oyp-c243]   .load-warning[_ngcontent-oyp-c243] {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.compact-3[_ngcontent-oyp-c243]   .load-card[_ngcontent-oyp-c243] {
+  width: 800px;
+  flex-direction: row;
+  min-height: 0
+}
+
+.compact-3[_ngcontent-oyp-c243]   .load-detail[_ngcontent-oyp-c243], .compact-3[_ngcontent-oyp-c243]   .header[_ngcontent-oyp-c243] {
+    width: 400px;
+}
+
+.compact-3[_ngcontent-oyp-c243]   .header-image[_ngcontent-oyp-c243] {
+  display: none;
+}
+
+.compact-3[_ngcontent-oyp-c243]   .load-step[_ngcontent-oyp-c243] {
+  padding: 0 0 8px 16px;
+}
+
+.compact-3.load-overlay[_ngcontent-oyp-c243] {
+  overflow: hidden;
+}
+
+
+
+.compact-narrow[_ngcontent-oyp-c243]   .load-card[_ngcontent-oyp-c243] {
+  width: 400px;
+}
+
+.compact-narrow[_ngcontent-oyp-c243]   .header[_ngcontent-oyp-c243] {
+  display: none;
+}</style><style>[_nghost-oyp-c139] {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  min-height: 0;
+}
+
+
+[_nghost-oyp-c139]     drag-indicator > div {
+  position: inherit !important;
+}
+
+drag-indicator[_ngcontent-oyp-c139] {
+  cursor: row-resize;
+}
+
+zero-state[_ngcontent-oyp-c139] {
+  margin-top: 25vh;
+}
+
+.bottom-panel[_ngcontent-oyp-c139] {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.drag-mask[_ngcontent-oyp-c139] {
+  cursor: row-resize;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.hidden-panel[_ngcontent-oyp-c139] {
+  position: absolute;
+  visibility: hidden;
+  z-index: -1;
+}
+
+.top-panel[_ngcontent-oyp-c139] {
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-height: 0;
+}</style><style>.cdk-high-contrast-active .mat-toolbar{outline:solid 1px}.mat-toolbar-row,.mat-toolbar-single-row{display:flex;box-sizing:border-box;padding:0 16px;width:100%;flex-direction:row;align-items:center;white-space:nowrap}.mat-toolbar-multiple-rows{display:flex;box-sizing:border-box;flex-direction:column;width:100%}
+</style><style>.mat-divider{display:block;margin:0;border-top-width:1px;border-top-style:solid}.mat-divider.mat-divider-vertical{border-top:0;border-right-width:1px;border-right-style:solid}.mat-divider.mat-divider-inset{margin-left:80px}[dir=rtl] .mat-divider.mat-divider-inset{margin-left:auto;margin-right:80px}
+</style><style>.mat-button .mat-button-focus-overlay,.mat-icon-button .mat-button-focus-overlay{opacity:0}.mat-button:hover:not(.mat-button-disabled) .mat-button-focus-overlay,.mat-stroked-button:hover:not(.mat-button-disabled) .mat-button-focus-overlay{opacity:.04}@media(hover: none){.mat-button:hover:not(.mat-button-disabled) .mat-button-focus-overlay,.mat-stroked-button:hover:not(.mat-button-disabled) .mat-button-focus-overlay{opacity:0}}.mat-button,.mat-icon-button,.mat-stroked-button,.mat-flat-button{box-sizing:border-box;position:relative;-webkit-user-select:none;user-select:none;cursor:pointer;outline:none;border:none;-webkit-tap-highlight-color:transparent;display:inline-block;white-space:nowrap;text-decoration:none;vertical-align:baseline;text-align:center;margin:0;min-width:64px;line-height:36px;padding:0 16px;border-radius:4px;overflow:visible}.mat-button::-moz-focus-inner,.mat-icon-button::-moz-focus-inner,.mat-stroked-button::-moz-focus-inner,.mat-flat-button::-moz-focus-inner{border:0}.mat-button.mat-button-disabled,.mat-icon-button.mat-button-disabled,.mat-stroked-button.mat-button-disabled,.mat-flat-button.mat-button-disabled{cursor:default}.mat-button.cdk-keyboard-focused .mat-button-focus-overlay,.mat-button.cdk-program-focused .mat-button-focus-overlay,.mat-icon-button.cdk-keyboard-focused .mat-button-focus-overlay,.mat-icon-button.cdk-program-focused .mat-button-focus-overlay,.mat-stroked-button.cdk-keyboard-focused .mat-button-focus-overlay,.mat-stroked-button.cdk-program-focused .mat-button-focus-overlay,.mat-flat-button.cdk-keyboard-focused .mat-button-focus-overlay,.mat-flat-button.cdk-program-focused .mat-button-focus-overlay{opacity:.12}.mat-button::-moz-focus-inner,.mat-icon-button::-moz-focus-inner,.mat-stroked-button::-moz-focus-inner,.mat-flat-button::-moz-focus-inner{border:0}.mat-raised-button{box-sizing:border-box;position:relative;-webkit-user-select:none;user-select:none;cursor:pointer;outline:none;border:none;-webkit-tap-highlight-color:transparent;display:inline-block;white-space:nowrap;text-decoration:none;vertical-align:baseline;text-align:center;margin:0;min-width:64px;line-height:36px;padding:0 16px;border-radius:4px;overflow:visible;transform:translate3d(0, 0, 0);transition:background 400ms cubic-bezier(0.25, 0.8, 0.25, 1),box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1)}.mat-raised-button::-moz-focus-inner{border:0}.mat-raised-button.mat-button-disabled{cursor:default}.mat-raised-button.cdk-keyboard-focused .mat-button-focus-overlay,.mat-raised-button.cdk-program-focused .mat-button-focus-overlay{opacity:.12}.mat-raised-button::-moz-focus-inner{border:0}.mat-raised-button._mat-animation-noopable{transition:none !important;animation:none !important}.mat-stroked-button{border:1px solid currentColor;padding:0 15px;line-height:34px}.mat-stroked-button .mat-button-ripple.mat-ripple,.mat-stroked-button .mat-button-focus-overlay{top:-1px;left:-1px;right:-1px;bottom:-1px}.mat-fab{box-sizing:border-box;position:relative;-webkit-user-select:none;user-select:none;cursor:pointer;outline:none;border:none;-webkit-tap-highlight-color:transparent;display:inline-block;white-space:nowrap;text-decoration:none;vertical-align:baseline;text-align:center;margin:0;min-width:64px;line-height:36px;padding:0 16px;border-radius:4px;overflow:visible;transform:translate3d(0, 0, 0);transition:background 400ms cubic-bezier(0.25, 0.8, 0.25, 1),box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);min-width:0;border-radius:50%;width:56px;height:56px;padding:0;flex-shrink:0}.mat-fab::-moz-focus-inner{border:0}.mat-fab.mat-button-disabled{cursor:default}.mat-fab.cdk-keyboard-focused .mat-button-focus-overlay,.mat-fab.cdk-program-focused .mat-button-focus-overlay{opacity:.12}.mat-fab::-moz-focus-inner{border:0}.mat-fab._mat-animation-noopable{transition:none !important;animation:none !important}.mat-fab .mat-button-wrapper{padding:16px 0;display:inline-block;line-height:24px}.mat-mini-fab{box-sizing:border-box;position:relative;-webkit-user-select:none;user-select:none;cursor:pointer;outline:none;border:none;-webkit-tap-highlight-color:transparent;display:inline-block;white-space:nowrap;text-decoration:none;vertical-align:baseline;text-align:center;margin:0;min-width:64px;line-height:36px;padding:0 16px;border-radius:4px;overflow:visible;transform:translate3d(0, 0, 0);transition:background 400ms cubic-bezier(0.25, 0.8, 0.25, 1),box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);min-width:0;border-radius:50%;width:40px;height:40px;padding:0;flex-shrink:0}.mat-mini-fab::-moz-focus-inner{border:0}.mat-mini-fab.mat-button-disabled{cursor:default}.mat-mini-fab.cdk-keyboard-focused .mat-button-focus-overlay,.mat-mini-fab.cdk-program-focused .mat-button-focus-overlay{opacity:.12}.mat-mini-fab::-moz-focus-inner{border:0}.mat-mini-fab._mat-animation-noopable{transition:none !important;animation:none !important}.mat-mini-fab .mat-button-wrapper{padding:8px 0;display:inline-block;line-height:24px}.mat-icon-button{padding:0;min-width:0;width:40px;height:40px;flex-shrink:0;line-height:40px;border-radius:50%}.mat-icon-button i,.mat-icon-button .mat-icon{line-height:24px}.mat-button-ripple.mat-ripple,.mat-button-focus-overlay{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-button-ripple.mat-ripple:not(:empty){transform:translateZ(0)}.mat-button-focus-overlay{opacity:0;transition:opacity 200ms cubic-bezier(0.35, 0, 0.25, 1),background-color 200ms cubic-bezier(0.35, 0, 0.25, 1)}._mat-animation-noopable .mat-button-focus-overlay{transition:none}.mat-button-ripple-round{border-radius:50%;z-index:1}.mat-button .mat-button-wrapper>*,.mat-flat-button .mat-button-wrapper>*,.mat-stroked-button .mat-button-wrapper>*,.mat-raised-button .mat-button-wrapper>*,.mat-icon-button .mat-button-wrapper>*,.mat-fab .mat-button-wrapper>*,.mat-mini-fab .mat-button-wrapper>*{vertical-align:middle}.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon-button,.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon-button{display:inline-flex;justify-content:center;align-items:center;font-size:inherit;width:2.5em;height:2.5em}.mat-flat-button::before,.mat-raised-button::before,.mat-fab::before,.mat-mini-fab::before{margin:calc(calc(var(--mat-focus-indicator-border-width, 3px) + 2px) * -1)}.mat-stroked-button::before{margin:calc(calc(var(--mat-focus-indicator-border-width, 3px) + 3px) * -1)}.cdk-high-contrast-active .mat-button,.cdk-high-contrast-active .mat-flat-button,.cdk-high-contrast-active .mat-raised-button,.cdk-high-contrast-active .mat-icon-button,.cdk-high-contrast-active .mat-fab,.cdk-high-contrast-active .mat-mini-fab{outline:solid 1px}
+</style><style>mat-menu{display:none}.mat-menu-panel{min-width:112px;max-width:280px;overflow:auto;-webkit-overflow-scrolling:touch;max-height:calc(100vh - 48px);border-radius:4px;outline:0;min-height:64px;position:relative}.mat-menu-panel.ng-animating{pointer-events:none}.cdk-high-contrast-active .mat-menu-panel{outline:solid 1px}.mat-menu-content:not(:empty){padding-top:8px;padding-bottom:8px}.mat-menu-item{-webkit-user-select:none;user-select:none;cursor:pointer;outline:none;border:none;-webkit-tap-highlight-color:transparent;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;line-height:48px;height:48px;padding:0 16px;text-align:left;text-decoration:none;max-width:100%;position:relative}.mat-menu-item::-moz-focus-inner{border:0}.mat-menu-item[disabled]{cursor:default}[dir=rtl] .mat-menu-item{text-align:right}.mat-menu-item .mat-icon{margin-right:16px;vertical-align:middle}.mat-menu-item .mat-icon svg{vertical-align:top}[dir=rtl] .mat-menu-item .mat-icon{margin-left:16px;margin-right:0}.mat-menu-item[disabled]::after{display:block;position:absolute;content:"";top:0;left:0;bottom:0;right:0}.cdk-high-contrast-active .mat-menu-item{margin-top:1px}.mat-menu-item-submenu-trigger{padding-right:32px}[dir=rtl] .mat-menu-item-submenu-trigger{padding-right:16px;padding-left:32px}.mat-menu-submenu-icon{position:absolute;top:50%;right:16px;transform:translateY(-50%);width:5px;height:10px;fill:currentColor}[dir=rtl] .mat-menu-submenu-icon{right:auto;left:16px;transform:translateY(-50%) scaleX(-1)}.cdk-high-contrast-active .mat-menu-submenu-icon{fill:CanvasText}button.mat-menu-item{width:100%}.mat-menu-item .mat-menu-ripple{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none}
+</style><style>[_nghost-oyp-c226] { display: none; }</style><style>img[_ngcontent-oyp-c252], mat-icon[_ngcontent-oyp-c252] {
+  border-radius: 50%;
+  vertical-align: middle;
+}</style><style>.drag-indicator[_ngcontent-oyp-c138] {
+  height: 8px;
+  line-height: 8px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #eee;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.drag-indicator[_ngcontent-oyp-c138]   .mat-icon[_ngcontent-oyp-c138] {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  opacity: 0.6;
+}</style><script type="text/javascript" charset="UTF-8" nonce="" src="Cloud%20Shell_files/tool_library.js"></script><style>[_nghost-oyp-c108] {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%
+}
+
+editor-status-bar[_ngcontent-oyp-c108] {
+  display: flex;
+}
+
+.editor-spinner-container[_ngcontent-oyp-c108] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  
+  z-index: 1;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.editor-spinner-container.offset-spinner-container[_ngcontent-oyp-c108] {
+  height: calc(100% - 40px);
+  top: 40px;
+}
+
+.editor-spinner[_ngcontent-oyp-c108] {
+  height: 60px;
+  width: 60px;
+  transition: opacity 0.8s;
+}</style><style>status-message[_ngcontent-oyp-c98] {
+  height: 40px;
+  width: 100%;
+}</style><style>[_nghost-oyp-c105] {
+  display: flex;
+  flex-grow: 1;
+  position: relative;
+}
+
+button[_ngcontent-oyp-c105] {
+  position: absolute;
+  right: 6px;
+  top: 2px
+}
+
+iframe[_ngcontent-oyp-c105] {
+  border: none;
+}</style><style>iframe[_ngcontent-oyp-c94] {
+  display: none;
+}</style><style>mat-toolbar[_ngcontent-oyp-c242] {
+  height: 32px;
+  display: flex;
+  color: rgba(95,99,104,100);
+  background-color: white;
+  padding: 0 12px;
+  border-bottom: 1px solid #e8eaed;
+}
+
+mat-divider[_ngcontent-oyp-c242] {
+  margin: 5px;
+  height: 60%;
+  border-right-color: #ccc;
+}
+
+.spacer[_ngcontent-oyp-c242] {
+  flex-grow: 1;
+}
+
+csh-header-menu-items[_ngcontent-oyp-c242] {
+  height: 48px;
+  min-height: 48px;
+}
+
+tab-bar[_ngcontent-oyp-c242] {
+  margin-left: 8px;
+}
+
+tab-bar[_ngcontent-oyp-c242] {
+  margin-top: -1px;
+}
+
+cloudshell-header[_ngcontent-oyp-c242]   new-tab-menu[_ngcontent-oyp-c242] {
+  margin-bottom: 5px;
+}
+
+header-title[_ngcontent-oyp-c242] {
+  margin-right: 10px;
+}
+
+csh-ephemeral-badge[_ngcontent-oyp-c242] {
+  margin-top: -1px;
+}</style><style>[_nghost-oyp-c222] {
+  display: flex;
+  flex-direction: column;
+}
+
+terminal-container[_ngcontent-oyp-c222] {
+  flex-grow: 1;
+  position: relative;
+}</style><style>[_nghost-oyp-c221] {
+  display: flex;
+  flex-direction: column;
+}
+
+terminal-loader[_ngcontent-oyp-c221], terminal-tab[_ngcontent-oyp-c221], xterm-terminal-tab[_ngcontent-oyp-c221] {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+terminal-tab[_ngcontent-oyp-c221], xterm-terminal-tab[_ngcontent-oyp-c221] {
+  z-index:-1;
+  opacity:0;
+}
+
+terminal-tab.active-terminal-frame[_ngcontent-oyp-c221], xterm-terminal-tab.active-terminal-frame[_ngcontent-oyp-c221] {
+  z-index:9;
+  opacity:1;
+}
+
+terminal-loader[_ngcontent-oyp-c221] {
+  z-index:10;
+}
+
+.wrapper[_ngcontent-oyp-c221] {
+  flex-grow: 1;
+  position: relative;
+}
+
+button[_ngcontent-oyp-c221] {
+  margin-left: 12px;
+}</style><style>.wrapper[_ngcontent-oyp-c214] {
+  position: absolute;
+  border: 4px solid #689ef6;
+  background-color: rgba(232, 240, 254, 0.5);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  z-index: 1100; 
+}
+
+.fake-snackbar[_ngcontent-oyp-c214] {
+  background: #323232;
+  color: rgba(255,255,255,.7);
+  border-radius: 4px;
+  padding: 14px 16px;
+  position: absolute;
+  bottom: 24px;
+}</style><style>.wrapper[_ngcontent-oyp-c107] {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  
+  z-index: 1;
+}
+
+.content[_ngcontent-oyp-c107] {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 70ex;
+}
+
+.content[_ngcontent-oyp-c107]   span[_ngcontent-oyp-c107], .content[_ngcontent-oyp-c107]   button[_ngcontent-oyp-c107], .content[_ngcontent-oyp-c107]   mat-icon[_ngcontent-oyp-c107] {
+  margin: .2em;
+  text-align: center;
+}
+
+.wrapper.offset-for-error[_ngcontent-oyp-c107] {
+  height: calc(100% - 40px);
+  top: 40px;
+}
+
+mat-spinner[_ngcontent-oyp-c107] {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+mat-icon[_ngcontent-oyp-c107] {
+  opacity: .6;
+}
+
+.content[_ngcontent-oyp-c107]   span.chrome-tip[_ngcontent-oyp-c107] {
+  margin: 24px 0 24px;
+}
+
+.chrome-tip[_ngcontent-oyp-c107]   mat-icon[_ngcontent-oyp-c107] {
+  margin: -8px 4px 0 4px;
+  transform: translate(0, 8px);
+}</style><style>[_nghost-oyp-c155] {
+  overflow: hidden;
+}
+
+mat-spinner[_ngcontent-oyp-c155] {
+  flex-shrink: 0;
+  margin-right: 2px;
+}
+
+.tiny[_ngcontent-oyp-c155] {
+  height: 18px;
+  width: 18px;
+  line-height: 11px;
+  margin-left: 5px;
+}
+
+.tiny[_ngcontent-oyp-c155]   mat-icon[_ngcontent-oyp-c155] {
+  font-size: 15px;
+  height: 15px;
+  width: 15px;
+  line-height: 15px;
+}
+
+.tiny.cs-icon[_ngcontent-oyp-c155] {
+  display: none;
+}
+
+.tiny.cs-icon.visible[_ngcontent-oyp-c155] {
+  display: initial;
+}
+
+.app-icon[_ngcontent-oyp-c155] {
+  font-size: 15px;
+  height: 15px;
+  width: 15px;
+  line-height: 15px;
+  margin-right: 5px;
+}
+
+mat-icon.error[_ngcontent-oyp-c155] {
+  height: 18px;
+  width: 18px;
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+mat-tab-group[_ngcontent-oyp-c155]:hover   .hover-button[_ngcontent-oyp-c155] {
+  opacity: 1;
+}
+
+.title[_ngcontent-oyp-c155] {
+  flex-shrink: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 30px;
+}
+
+.title.hidden[_ngcontent-oyp-c155] {
+  display: none;
+}</style><style>button.dense[_ngcontent-oyp-c234]   mat-icon[_ngcontent-oyp-c234] {
+  line-height: 18px;
+  font-size: 18px;
+  height: 18px;
+  width: 18px;
+}
+
+.mat-button.dense[_ngcontent-oyp-c234] {
+  padding: 0;
+  min-width: 0;
+  line-height: 26px;
+}
+
+.mat-button.main[_ngcontent-oyp-c234] {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.mat-button.dropdown[_ngcontent-oyp-c234] {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.mat-button.dense.main[_ngcontent-oyp-c234] {
+  padding: 0 0 0 5px;
+}
+
+.mat-button.dense.dropdown[_ngcontent-oyp-c234] {
+  padding: 0 1px;
+}
+
+div[_ngcontent-oyp-c234]:hover     .mat-button-focus-overlay, .submenu-active[_ngcontent-oyp-c234]     .mat-button-focus-overlay {
+  opacity: .04;
+}</style><style>button[_ngcontent-oyp-c223] {
+  height: 30px;
+  padding: 0 8px;
+}
+
+mat-icon[_ngcontent-oyp-c223] {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  line-height: 20px;
+  margin-right: 5px;
+}</style><style>.mat-tab-group{display:flex;flex-direction:column;max-width:100%}.mat-tab-group.mat-tab-group-inverted-header{flex-direction:column-reverse}.mat-tab-label{height:48px;padding:0 24px;cursor:pointer;box-sizing:border-box;opacity:.6;min-width:160px;text-align:center;display:inline-flex;justify-content:center;align-items:center;white-space:nowrap;position:relative}.mat-tab-label:focus{outline:none}.mat-tab-label:focus:not(.mat-tab-disabled){opacity:1}.mat-tab-label.mat-tab-disabled{cursor:default}.cdk-high-contrast-active .mat-tab-label.mat-tab-disabled{opacity:.5}.mat-tab-label .mat-tab-label-content{display:inline-flex;justify-content:center;align-items:center;white-space:nowrap}.cdk-high-contrast-active .mat-tab-label{opacity:1}@media(max-width: 599px){.mat-tab-label{padding:0 12px}}@media(max-width: 959px){.mat-tab-label{padding:0 12px}}.mat-tab-group[mat-stretch-tabs]>.mat-tab-header .mat-tab-label{flex-basis:0;flex-grow:1}.mat-tab-body-wrapper{position:relative;overflow:hidden;display:flex;transition:height 500ms cubic-bezier(0.35, 0, 0.25, 1)}.mat-tab-body-wrapper._mat-animation-noopable{transition:none !important;animation:none !important}.mat-tab-body{top:0;left:0;right:0;bottom:0;position:absolute;display:block;overflow:hidden;outline:0;flex-basis:100%}.mat-tab-body.mat-tab-body-active{position:relative;overflow-x:hidden;overflow-y:auto;z-index:1;flex-grow:1}.mat-tab-group.mat-tab-group-dynamic-height .mat-tab-body.mat-tab-body-active{overflow-y:hidden}
+</style><style>.mat-tab-header{display:flex;overflow:hidden;position:relative;flex-shrink:0}.mat-tab-header-pagination{-webkit-user-select:none;user-select:none;position:relative;display:none;justify-content:center;align-items:center;min-width:32px;cursor:pointer;z-index:2;-webkit-tap-highlight-color:transparent;touch-action:none;box-sizing:content-box;background:none;border:none;outline:0;padding:0}.mat-tab-header-pagination::-moz-focus-inner{border:0}.mat-tab-header-pagination-controls-enabled .mat-tab-header-pagination{display:flex}.mat-tab-header-pagination-before,.mat-tab-header-rtl .mat-tab-header-pagination-after{padding-left:4px}.mat-tab-header-pagination-before .mat-tab-header-pagination-chevron,.mat-tab-header-rtl .mat-tab-header-pagination-after .mat-tab-header-pagination-chevron{transform:rotate(-135deg)}.mat-tab-header-rtl .mat-tab-header-pagination-before,.mat-tab-header-pagination-after{padding-right:4px}.mat-tab-header-rtl .mat-tab-header-pagination-before .mat-tab-header-pagination-chevron,.mat-tab-header-pagination-after .mat-tab-header-pagination-chevron{transform:rotate(45deg)}.mat-tab-header-pagination-chevron{border-style:solid;border-width:2px 2px 0 0;height:8px;width:8px}.mat-tab-header-pagination-disabled{box-shadow:none;cursor:default}.mat-tab-list{flex-grow:1;position:relative;transition:transform 500ms cubic-bezier(0.35, 0, 0.25, 1)}.mat-ink-bar{position:absolute;bottom:0;height:2px;transition:500ms cubic-bezier(0.35, 0, 0.25, 1)}.mat-ink-bar._mat-animation-noopable{transition:none !important;animation:none !important}.mat-tab-group-inverted-header .mat-ink-bar{bottom:auto;top:0}.cdk-high-contrast-active .mat-ink-bar{outline:solid 2px;height:0}.mat-tab-labels{display:flex}[mat-align-tabs=center]>.mat-tab-header .mat-tab-labels{justify-content:center}[mat-align-tabs=end]>.mat-tab-header .mat-tab-labels{justify-content:flex-end}.mat-tab-label-container{display:flex;flex-grow:1;overflow:hidden;z-index:1}.mat-tab-list._mat-animation-noopable{transition:none !important;animation:none !important}.mat-tab-label{height:48px;padding:0 24px;cursor:pointer;box-sizing:border-box;opacity:.6;min-width:160px;text-align:center;display:inline-flex;justify-content:center;align-items:center;white-space:nowrap;position:relative}.mat-tab-label:focus{outline:none}.mat-tab-label:focus:not(.mat-tab-disabled){opacity:1}.mat-tab-label.mat-tab-disabled{cursor:default}.cdk-high-contrast-active .mat-tab-label.mat-tab-disabled{opacity:.5}.mat-tab-label .mat-tab-label-content{display:inline-flex;justify-content:center;align-items:center;white-space:nowrap}.cdk-high-contrast-active .mat-tab-label{opacity:1}.mat-tab-label::before{margin:5px}@media(max-width: 599px){.mat-tab-label{min-width:72px}}
+</style><script async="" defer="defer" src="Cloud%20Shell_files/walkthrough.js" nonce=""></script><style>.mat-tab-body-content{height:100%;overflow:auto}.mat-tab-group-dynamic-height .mat-tab-body-content{overflow:hidden}.mat-tab-body-content[style*="visibility: hidden"]{display:none}
+</style><style mat-spinner-animation="15">
+ @keyframes mat-progress-spinner-stroke-rotate-15 {
+    0%      { stroke-dashoffset: 14.922565104551516;  transform: rotate(0); }
+    12.5%   { stroke-dashoffset: 3.141592653589793;    transform: rotate(0); }
+    12.5001%  { stroke-dashoffset: 3.141592653589793;    transform: rotateX(180deg) rotate(72.5deg); }
+    25%     { stroke-dashoffset: 14.922565104551516;  transform: rotateX(180deg) rotate(72.5deg); }
+
+    25.0001%   { stroke-dashoffset: 14.922565104551516;  transform: rotate(270deg); }
+    37.5%   { stroke-dashoffset: 3.141592653589793;    transform: rotate(270deg); }
+    37.5001%  { stroke-dashoffset: 3.141592653589793;    transform: rotateX(180deg) rotate(161.5deg); }
+    50%     { stroke-dashoffset: 14.922565104551516;  transform: rotateX(180deg) rotate(161.5deg); }
+
+    50.0001%  { stroke-dashoffset: 14.922565104551516;  transform: rotate(180deg); }
+    62.5%   { stroke-dashoffset: 3.141592653589793;    transform: rotate(180deg); }
+    62.5001%  { stroke-dashoffset: 3.141592653589793;    transform: rotateX(180deg) rotate(251.5deg); }
+    75%     { stroke-dashoffset: 14.922565104551516;  transform: rotateX(180deg) rotate(251.5deg); }
+
+    75.0001%  { stroke-dashoffset: 14.922565104551516;  transform: rotate(90deg); }
+    87.5%   { stroke-dashoffset: 3.141592653589793;    transform: rotate(90deg); }
+    87.5001%  { stroke-dashoffset: 3.141592653589793;    transform: rotateX(180deg) rotate(341.5deg); }
+    100%    { stroke-dashoffset: 14.922565104551516;  transform: rotateX(180deg) rotate(341.5deg); }
+  }
+</style><style>status-message[_ngcontent-oyp-c215] {
+  height: 40px;
+}</style><style>xterm-terminal[_ngcontent-oyp-c217] {
+  width: 100%;
+  height: 100%;
+}
+
+.xterm-container[_ngcontent-oyp-c217] {
+  width: 100%;
+  height: 100%;
+}</style><style>mat-toolbar[_ngcontent-oyp-c97] {
+  display: flex;
+  padding: 0 24px;
+  height: 40px;
+  min-width: 0;
+}
+
+mat-toolbar.info[_ngcontent-oyp-c97], mat-toolbar.warning[_ngcontent-oyp-c97] {
+  background-color: #f1f3f4; 
+}
+
+mat-toolbar.info[_ngcontent-oyp-c97]   mat-icon[_ngcontent-oyp-c97] {
+  color: #1967d2; 
+}
+
+mat-toolbar.warning[_ngcontent-oyp-c97]   mat-icon[_ngcontent-oyp-c97] {
+  color: #f9ab00; 
+}
+
+mat-toolbar.error[_ngcontent-oyp-c97] {
+  background-color: #fce8e6; 
+}
+
+mat-toolbar.error[_ngcontent-oyp-c97]   mat-icon[_ngcontent-oyp-c97] {
+  color: #c5221f; 
+}
+
+mat-toolbar[_ngcontent-oyp-c97]   mat-icon[_ngcontent-oyp-c97] {
+  margin-right: 15px;
+}
+
+.spacer[_ngcontent-oyp-c97] {
+  flex-grow: 1;
+}
+
+.status-text[_ngcontent-oyp-c97] {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text[_ngcontent-oyp-c97] {
+  color: #3c4043;
+}
+
+
+.mat-icon[_ngcontent-oyp-c97] {
+  overflow: visible;
+}</style><style>[_nghost-oyp-c216] {
+  display: flex;
+  border-top: 1px solid #f1f2f4;
+  overflow: hidden;
+}
+
+.wrapper[_ngcontent-oyp-c216] {
+  background: white;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content[_ngcontent-oyp-c216] {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 70ex;
+}
+
+.content[_ngcontent-oyp-c216]   span[_ngcontent-oyp-c216], .content[_ngcontent-oyp-c216]   button[_ngcontent-oyp-c216] {
+  text-align: center;
+  margin: .2em;
+
+}
+
+mat-spinner[_ngcontent-oyp-c216] {
+  display: inline-block;
+  margin-right: 8px;
+}</style><style>[_nghost-oyp-c8]     .xterm-accessibility {
+  opacity: 0;
+}
+
+.terminal-container[_ngcontent-oyp-c8] {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.terminal-spacer[_ngcontent-oyp-c8] {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  transition: box-shadow 0.05s ease-in-out;
+  box-shadow: inset 0 0 0 0;
+}
+
+.bell-indicator.terminal-spacer[_ngcontent-oyp-c8] {
+  box-shadow: inset 0 0 8px 0;
+}</style><style>.mat-tooltip{color:#fff;border-radius:4px;margin:14px;max-width:250px;padding-left:8px;padding-right:8px;overflow:hidden;text-overflow:ellipsis;-webkit-transform:scale(0);transform:scale(0)}.mat-tooltip._mat-animation-noopable{-webkit-animation:none;animation:none;-webkit-transform:scale(1);transform:scale(1)}.cdk-high-contrast-active .mat-tooltip{outline:1px solid}.mat-tooltip-handset{margin:24px;padding-left:16px;padding-right:16px}.mat-tooltip-panel-non-interactive{pointer-events:none}@-webkit-keyframes mat-tooltip-show{0%{opacity:0;-webkit-transform:scale(0);transform:scale(0)}50%{opacity:.5;-webkit-transform:scale(.99);transform:scale(.99)}to{opacity:1;-webkit-transform:scale(1);transform:scale(1)}}@keyframes mat-tooltip-show{0%{opacity:0;-webkit-transform:scale(0);transform:scale(0)}50%{opacity:.5;-webkit-transform:scale(.99);transform:scale(.99)}to{opacity:1;-webkit-transform:scale(1);transform:scale(1)}}@-webkit-keyframes mat-tooltip-hide{0%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}to{opacity:0;-webkit-transform:scale(1);transform:scale(1)}}@keyframes mat-tooltip-hide{0%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}to{opacity:0;-webkit-transform:scale(1);transform:scale(1)}}.mat-tooltip-show{-webkit-animation:mat-tooltip-show .2s cubic-bezier(0,0,.2,1) forwards;animation:mat-tooltip-show .2s cubic-bezier(0,0,.2,1) forwards}.mat-tooltip-hide{-webkit-animation:mat-tooltip-hide .1s cubic-bezier(0,0,.2,1) forwards;animation:mat-tooltip-hide .1s cubic-bezier(0,0,.2,1) forwards}</style></head><body class="csh-app-body mat-app-background"><cloud-shell-root class="csh-app" _nghost-oyp-c260="" ng-version="0.0.0-PLACEHOLDER"><app-loader _ngcontent-oyp-c260=""><!----><!----></app-loader><security-blocking-indicator _ngcontent-oyp-c260="" _nghost-oyp-c64=""><!----></security-blocking-indicator><div _ngcontent-oyp-c260="" cshinit="" layout-fill="" class="csh-app ng-star-inserted"><!----><!----><stand-alone _ngcontent-oyp-c260="" _nghost-oyp-c259="" class="ng-star-inserted"><div _ngcontent-oyp-c259="" id="cloudshell"><standalone-header _ngcontent-oyp-c259="" _nghost-oyp-c135=""><div _ngcontent-oyp-c135="" class="toolbar-container"><mat-icon _ngcontent-oyp-c135="" role="img" class="mat-icon notranslate cs-icon google-material-icons mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font"><custom-svg _ngcontent-oyp-c135="" icon="cloudshellsection"><!----><!----><!----><svg viewBox="0 0 24 24" class="ng-star-inserted"><path d="M10 17.8h4V20h-4z" fill="#606469"></path><path d="M8 20h8v2H8z" fill="#80858b"></path><path d="M21 2H3c-1.1 0-2 .9-2 2v11.9c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-4
+               13h-4v-2h4v2zm.1-4.8l-9.9 4.1v-2.1l7.2-3.1-7.2-3v-2l9.9 4.1v2z" fill="#999fa6"></path></svg><!----><!----><!----><!----><!----><!----><!----></custom-svg></mat-icon><h1 _ngcontent-oyp-c135="" class="gmat-headline-6 title">Cloud Shell Editor</h1><mat-toolbar _ngcontent-oyp-c135="" role="toolbar" class="mat-toolbar mat-toolbar-single-row"><!----><!----><div _ngcontent-oyp-c135="" class="spacer"></div><span _ngcontent-oyp-c135="" class="view-controls-container"><cloudshell-view-controls _ngcontent-oyp-c259=""><!----><visibility-toggle _ngcontent-oyp-c259="" density-large="" controltype="editor" class="mat-tooltip-trigger" _nghost-oyp-c159="" aria-describedby="cdk-describedby-message-oyp-1-3" cdk-describedby-host="oyp-1"><button _ngcontent-oyp-c159="" mat-icon-button="" configurabledensity="" class="mat-focus-indicator mat-icon-button mat-button-base large selected" aria-label="Close Editor"><span class="mat-button-wrapper"><mat-icon _ngcontent-oyp-c159="" role="img" class="mat-icon notranslate google-material-icons mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font"><custom-svg _ngcontent-oyp-c159=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ng-star-inserted"><path d="M11 19h10v2H11v-2zm-8-1.8l11.1-11 3.8 3.7L6.8 21H3v-3.8z
+               M20.7 7S18.9 8.9 19 8.9l-3.8-3.8L17 3.3c.4-.4 1-.4 1.4 0l2.3 2.3c.4.4.4 1 0
+               1.4z"></path></svg><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></custom-svg></mat-icon></span><span matripple="" class="mat-ripple mat-button-ripple mat-button-ripple-round"></span><span class="mat-button-focus-overlay"></span></button></visibility-toggle><!----><visibility-toggle _ngcontent-oyp-c259="" density-large="" controltype="shell" spotlight-id="toggle-terminal" class="mat-tooltip-trigger" _nghost-oyp-c159="" aria-describedby="cdk-describedby-message-oyp-1-4" cdk-describedby-host="oyp-1"><button _ngcontent-oyp-c159="" mat-icon-button="" configurabledensity="" class="mat-focus-indicator mat-icon-button mat-button-base large selected" aria-label="Close Terminal"><span class="mat-button-wrapper"><mat-icon _ngcontent-oyp-c159="" role="img" class="mat-icon notranslate google-material-icons mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font"><custom-svg _ngcontent-oyp-c159=""><!----><!----><!----><!----><!----><svg viewBox="0 0 24 24" class="ng-star-inserted"><path d="M12 12.996L8.5 8.99H5l3.5 4.006L5 17h3.5l3.5-4.004zm-9-8C3 3.892 3.893 3 4.995
+               3h14.01C20.107 3 21 3.893 21 4.995v14.01A1.995 1.995 0 0 1 19.005 21H4.995A1.995
+               1.995 0 0 1 3 19.005V4.995zm10.01 9.983v1.98L18 17l.054-2.02H13.01z" fill-rule="evenodd"></path></svg><!----><!----><!----><!----><!----></custom-svg></mat-icon></span><span matripple="" class="mat-ripple mat-button-ripple mat-button-ripple-round"></span><span class="mat-button-focus-overlay"></span></button></visibility-toggle><!----></cloudshell-view-controls></span><mat-divider _ngcontent-oyp-c135="" role="separator" class="mat-divider mat-divider-vertical" aria-orientation="vertical"></mat-divider><cloudshell-action-controls _ngcontent-oyp-c259=""><web-preview-menu _ngcontent-oyp-c259="" density-large=""><button mat-icon-button="" spotlight-id="devshell-web-preview-button" spotlightid="cloud-shell-web-preview-button" configurabledensity="" mattooltip="Web Preview" aria-label="Web Preview" class="mat-focus-indicator mat-menu-trigger mat-tooltip-trigger mat-icon-button mat-button-base large" aria-haspopup="menu"><span class="mat-button-wrapper"><mat-icon role="img" class="mat-icon notranslate google-material-icons mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font"><custom-svg icon="webpreview"><!----><!----><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ng-star-inserted"><path d="M20 4c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2
+               V6c0-1.1.9-2 2-2h16zm0 14V8H4v10h16zm-8-9l7 4-7 4-7-4 7-4zm0
+               5.9c1 0 1.9-.8 1.9-1.9 0-1.1-.8-1.9-1.9-1.9-1.1 0-1.9.8-1.9
+               1.9 0 1.1.9 1.9 1.9 1.9z"></path></svg><!----><!----><!----><!----><!----><!----><!----><!----></custom-svg></mat-icon></span><span matripple="" class="mat-ripple mat-button-ripple mat-button-ripple-round"></span><span class="mat-button-focus-overlay"></span></button><!----><mat-menu xposition="before" class="ng-tns-c127-1 ng-star-inserted"><!----></mat-menu></web-preview-menu><session-info _ngcontent-oyp-c259="" density-large="" _nghost-oyp-c157=""><!----><button _ngcontent-oyp-c157="" mat-icon-button="" configurabledensity="" mattooltip="Session information" aria-label="Session information" class="mat-focus-indicator mat-menu-trigger mat-tooltip-trigger large mat-icon-button mat-button-base ng-star-inserted" aria-haspopup="menu"><span class="mat-button-wrapper"><mat-icon _ngcontent-oyp-c157="" role="img" class="mat-icon notranslate google-material-icons mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font"> call_to_action </mat-icon><!----></span><span matripple="" class="mat-ripple mat-button-ripple mat-button-ripple-round"></span><span class="mat-button-focus-overlay"></span></button><!----><mat-menu _ngcontent-oyp-c157="" xposition="before" class="ng-tns-c127-13 ng-star-inserted"><!----></mat-menu><!----><!----><!----></session-info><more-button _ngcontent-oyp-c259="" density-large="" _nghost-oyp-c233=""><button _ngcontent-oyp-c233="" mat-icon-button="" spotlight-id="cloud-shell-more-button" spotlightid="cloud-shell-more-button" configurabledensity="" mattooltip="More" aria-label="More Cloud Shell settings" class="mat-focus-indicator mat-menu-trigger mat-tooltip-trigger mat-icon-button mat-button-base large active" aria-haspopup="menu" aria-describedby="cdk-describedby-message-oyp-1-2" cdk-describedby-host="oyp-1" aria-expanded="true" aria-controls="mat-menu-panel-1"><span class="mat-button-wrapper"><mat-icon _ngcontent-oyp-c233="" role="img" class="mat-icon notranslate google-material-icons mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">more_vert</mat-icon></span><span matripple="" class="mat-ripple mat-button-ripple mat-button-ripple-round"></span><span class="mat-button-focus-overlay"></span></button><!----><upload-input _ngcontent-oyp-c233="" _nghost-oyp-c226=""><input _ngcontent-oyp-c226="" type="file" multiple="true"></upload-input><mat-menu _ngcontent-oyp-c233="" xposition="before" class="ng-tns-c127-2 ng-star-inserted"><!----></mat-menu></more-button><account-button _ngcontent-oyp-c259="" density-large="" _nghost-oyp-c257=""><button _ngcontent-oyp-c257="" mat-icon-button="" configurabledensity="" aria-label="Choose Google account" class="mat-focus-indicator mat-tooltip-trigger mat-icon-button mat-button-base large" aria-expanded="false" aria-describedby="cdk-describedby-message-oyp-1-5" cdk-describedby-host="oyp-1"><span class="mat-button-wrapper"><profile-photo _ngcontent-oyp-c257="" _nghost-oyp-c252=""><img _ngcontent-oyp-c252="" alt="Profile photo" aria-hidden="true" style="width: 32px; height: 32px;" src="Cloud%20Shell_files/unnamed.png" class="ng-star-inserted"><!----><!----></profile-photo></span><span matripple="" class="mat-ripple mat-button-ripple mat-button-ripple-round"></span><span class="mat-button-focus-overlay"></span></button><!----></account-button></cloudshell-action-controls></mat-toolbar></div></standalone-header><!----><!----><!----><div _ngcontent-oyp-c259="" class="main-content"><loading-screen _ngcontent-oyp-c259="" _nghost-oyp-c243="" class="ng-tns-c243-0 ng-star-inserted" style="height: 393px;"><!----><!----><!----><!----><!----></loading-screen><horizontal-split _ngcontent-oyp-c259="" _nghost-oyp-c139=""><!----><div _ngcontent-oyp-c139="" class="top-panel" style="flex-basis: 393px;"><editor _ngcontent-oyp-c259="" class="ng-star-inserted"><theia-container _nghost-oyp-c108=""><editor-status-bar _ngcontent-oyp-c108="" _nghost-oyp-c98=""><!----><!----><!----></editor-status-bar><!----><theia-iframe _ngcontent-oyp-c108="" _nghost-oyp-c105=""><button _ngcontent-oyp-c105="" mat-icon-button="" mattooltip="Close Editor" aria-label="Close Editor" class="mat-focus-indicator mat-tooltip-trigger dense mat-icon-button mat-button-base ng-star-inserted"><span class="mat-button-wrapper"><mat-icon _ngcontent-oyp-c105="" role="img" class="mat-icon notranslate google-material-icons mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">close</mat-icon></span><span matripple="" class="mat-ripple mat-button-ripple mat-button-ripple-round"></span><span class="mat-button-focus-overlay"></span></button><!----><!----><iframe _ngcontent-oyp-c105="" id="cloud-shell-editor" allow="clipboard-read *; clipboard-write *;" class="theia-iframe ng-star-inserted" src="https://970-8579f0ac-bff5-4921-8535-062a2c9afa16.cs-europe-west4-bhnf.cloudshell.dev?authuser=0&amp;cloudshell_workspace=theia_select"></iframe><!----><!----></theia-iframe><tp-cookies-checker _ngcontent-oyp-c108="" _nghost-oyp-c94=""><iframe _ngcontent-oyp-c94="" src="Cloud%20Shell_files/third_party_cookies_check.html"></iframe></tp-cookies-checker><!----></theia-container></editor><!----></div><div _ngcontent-oyp-c139="" class="bottom-panel" style="flex-basis: 202px;"><drag-indicator _ngcontent-oyp-c139="" csh-draggable="" _nghost-oyp-c138=""><div _ngcontent-oyp-c138="" aria-label="Resize editor and cloud shell" class="drag-indicator"><mat-icon _ngcontent-oyp-c138="" role="img" class="mat-icon notranslate google-material-icons mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">more_horiz</mat-icon></div></drag-indicator><devshell-toolbar _ngcontent-oyp-c259="" _nghost-oyp-c242="" class="ng-star-inserted"><!----><mat-toolbar _ngcontent-oyp-c242="" role="toolbar" class="mat-toolbar mat-toolbar-single-row ng-star-inserted"><key-combination-menu _ngcontent-oyp-c242=""><button mat-icon-button="" configurabledensity="" mattooltip="Send key combination" aria-label="Send key combination" class="mat-focus-indicator mat-menu-trigger mat-tooltip-trigger mat-icon-button mat-button-base dense" aria-haspopup="menu"><span class="mat-button-wrapper"><mat-icon role="img" class="mat-icon notranslate google-material-icons mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">keyboard</mat-icon></span><span matripple="" class="mat-ripple mat-button-ripple mat-button-ripple-round"></span><span class="mat-button-focus-overlay"></span></button><!----><mat-menu class="ng-tns-c127-3 ng-star-inserted"><!----></mat-menu></key-combination-menu><settings-button _ngcontent-oyp-c242=""><button mat-icon-button="" configurabledensity="" mattooltip="Terminal settings" aria-label="Terminal settings" spotlight-id="devshell-settings-button" spotlightid="cloud-shell-settings-button" class="mat-focus-indicator mat-menu-trigger mat-tooltip-trigger mat-icon-button mat-button-base dense active" aria-haspopup="menu" aria-expanded="true" aria-controls="mat-menu-panel-3"><span class="mat-button-wrapper"><mat-icon role="img" class="mat-icon notranslate google-material-icons mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">settings</mat-icon></span><span matripple="" class="mat-ripple mat-button-ripple mat-button-ripple-round"></span><span class="mat-button-focus-overlay"></span></button><!----><mat-menu class="ng-tns-c127-4 ng-star-inserted"><!----></mat-menu><mat-menu class="ng-tns-c127-5 ng-star-inserted"><!----></mat-menu><mat-menu class="ng-tns-c127-6 ng-star-inserted"><!----></mat-menu><mat-menu class="ng-tns-c127-7 ng-star-inserted"><!----></mat-menu><mat-menu class="ng-tns-c127-8 ng-star-inserted"><!----></mat-menu><mat-menu class="ng-star-inserted"><!----></mat-menu><mat-menu class="ng-tns-c127-10 ng-star-inserted"><!----></mat-menu><mat-menu class="ng-tns-c127-11 ng-star-inserted"><!----></mat-menu></settings-button><tab-bar _ngcontent-oyp-c242="" _nghost-oyp-c155=""><mat-tab-group _ngcontent-oyp-c155="" gmat-tabs="" class="mat-tab-group disable-pagination mat-primary title-hidden gmat-tabs ng-star-inserted"><mat-tab-header class="mat-tab-header"><button aria-hidden="true" type="button" mat-ripple="" tabindex="-1" class="mat-ripple mat-tab-header-pagination mat-tab-header-pagination-before mat-elevation-z4 mat-tab-header-pagination-disabled" disabled="disabled"><div class="mat-tab-header-pagination-chevron"></div></button><div class="mat-tab-label-container"><div role="tablist" class="mat-tab-list" style="transform: translateX(0px);"><div class="mat-tab-labels"><div role="tab" mattablabelwrapper="" mat-ripple="" cdkmonitorelementfocus="" class="mat-ripple mat-tab-label mat-focus-indicator mat-tab-label-active ng-star-inserted" id="mat-tab-label-0-0" tabindex="0" aria-posinset="1" aria-setsize="1" aria-controls="mat-tab-content-0-0" aria-selected="true" aria-disabled="false"><div class="mat-tab-label-content"><!----><!----><!----><mat-icon _ngcontent-oyp-c155="" role="img" class="mat-icon notranslate cs-icon tiny google-material-icons inactive-title mat-icon-no-color ng-star-inserted" aria-hidden="true" aria-label="Terminal tab 0 with title (peppy-pottery-358816)" data-mat-icon-type="font"><custom-svg _ngcontent-oyp-c155=""><!----><!----><!----><!----><svg viewBox="0 0 24 24" class="ng-star-inserted"><path d="M10 17.8h4V20h-4z" fill="#4285f4"></path><path d="M8 20h8v2H8z" fill="#669df6"></path><path d="M21 2H3c-1.1 0-2 .9-2 2v11.9c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-4
+               13h-4v-2h4v2zm.1-4.8l-9.9 4.1v-2.1l7.2-3.1-7.2-3v-2l9.9 4.1v2z" fill="#aecbfa"></path></svg><!----><!----><!----><!----><!----><!----></custom-svg></mat-icon><span _ngcontent-oyp-c155="" class="title inactive-title ng-star-inserted" aria-label="Terminal tab 0 with title (peppy-pottery-358816)"> (peppy-pottery-358816) </span><!----><!----><!----><button _ngcontent-oyp-c155="" mattooltip="Close tab" mat-icon-button="" class="mat-focus-indicator mat-tooltip-trigger protractor-close-active-tab-button tiny mat-icon-button mat-button-base ng-star-inserted" aria-label="Close terminal tab 0" aria-describedby="cdk-describedby-message-oyp-1-8" cdk-describedby-host="oyp-1"><span class="mat-button-wrapper"><mat-icon _ngcontent-oyp-c155="" role="img" class="mat-icon notranslate google-material-icons mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">close</mat-icon></span><span matripple="" class="mat-ripple mat-button-ripple mat-button-ripple-round"></span><span class="mat-button-focus-overlay"></span></button><!----><!----><!----><!----></div></div><!----></div><mat-ink-bar class="mat-ink-bar" style="visibility: visible; left: 10px; width: 165px;"></mat-ink-bar></div></div><button aria-hidden="true" type="button" mat-ripple="" tabindex="-1" class="mat-ripple mat-tab-header-pagination mat-tab-header-pagination-after mat-elevation-z4 mat-tab-header-pagination-disabled" disabled="disabled"><div class="mat-tab-header-pagination-chevron"></div></button></mat-tab-header><div class="mat-tab-body-wrapper" style=""><mat-tab-body role="tabpanel" class="mat-tab-body ng-tns-c145-12 mat-tab-body-active ng-star-inserted" id="mat-tab-content-0-0" aria-labelledby="mat-tab-label-0-0"><div cdkscrollable="" class="mat-tab-body-content ng-tns-c145-12 ng-trigger ng-trigger-translateTab" style="transform: none;"><!----><!----></div></mat-tab-body><!----></div></mat-tab-group><!----></tab-bar><new-tab-menu _ngcontent-oyp-c242="" _nghost-oyp-c234=""><div _ngcontent-oyp-c234="" mattooltip="Maximum number of Cloud Shell sessions open" class="mat-tooltip-trigger" aria-describedby="cdk-describedby-message-oyp-1-6" cdk-describedby-host="oyp-1"><button _ngcontent-oyp-c234="" mat-button="" spotlight-id="devshell-add-tab-button" spotlightid="cloud-shell-add-tab-button" configurabledensity="" mattooltip="Open a new tab" aria-label="Open a new tab" class="mat-focus-indicator mat-tooltip-trigger main mat-button mat-button-base dense"><span class="mat-button-wrapper"><mat-icon _ngcontent-oyp-c234="" role="img" class="mat-icon notranslate google-material-icons mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">add</mat-icon></span><span matripple="" class="mat-ripple mat-button-ripple"></span><span class="mat-button-focus-overlay"></span></button><!----><button _ngcontent-oyp-c234="" mat-button="" spotlight-id="cloud-shell-add-tab-with-project-button" spotlightid="cloud-shell-add-tab-with-project-button" configurabledensity="" project-selector-menu-trigger="" mattooltip="Open a new tab with project..." aria-label="Open a new tab with specific project." class="mat-focus-indicator mat-tooltip-trigger dropdown mat-button mat-button-base dense" aria-expanded="false" aria-describedby="cdk-describedby-message-oyp-1-7" cdk-describedby-host="oyp-1"><span class="mat-button-wrapper"><mat-icon _ngcontent-oyp-c234="" role="img" class="mat-icon notranslate google-material-icons mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">arrow_drop_down</mat-icon></span><span matripple="" class="mat-ripple mat-button-ripple"></span><span class="mat-button-focus-overlay"></span></button><!----></div><!----><!----></new-tab-menu><div _ngcontent-oyp-c242="" class="spacer"></div><quota-indicator _ngcontent-oyp-c242="" _nghost-oyp-c236=""><!----><!----><!----><!----></quota-indicator><capture-tab-button _ngcontent-oyp-c242="" _nghost-oyp-c223=""><!----></capture-tab-button><close-button _ngcontent-oyp-c242=""><button mat-icon-button="" spotlight-id="cloud-shell-close-button" spotlightid="cloud-shell-close-button" configurabledensity="" class="mat-focus-indicator mat-tooltip-trigger mat-icon-button mat-button-base dense" aria-label="Close Terminal"><span class="mat-button-wrapper"><mat-icon role="img" class="mat-icon notranslate google-material-icons mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">close</mat-icon></span><span matripple="" class="mat-ripple mat-button-ripple mat-button-ripple-round"></span><span class="mat-button-focus-overlay"></span></button><!----></close-button></mat-toolbar><!----><!----><!----><!----></devshell-toolbar><devshell _ngcontent-oyp-c259="" _nghost-oyp-c222="" class="ng-star-inserted"><terminal-container _ngcontent-oyp-c222="" _nghost-oyp-c221=""><terminal-status-bar _ngcontent-oyp-c221="" _nghost-oyp-c215="" class="ng-star-inserted"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></terminal-status-bar><!----><!----><div _ngcontent-oyp-c221="" class="wrapper"><drop-target _ngcontent-oyp-c221="" _nghost-oyp-c214=""><!----></drop-target><!----><!----><!----><xterm-terminal-tab _ngcontent-oyp-c221="" _nghost-oyp-c217="" class="active-terminal-frame ng-star-inserted"><div _ngcontent-oyp-c217="" class="xterm-container" style="background-color: rgb(34, 34, 34);"><xterm-terminal _ngcontent-oyp-c217="" cshxtermfitaddon="" _nghost-oyp-c8="" class="ng-star-inserted"><div _ngcontent-oyp-c8="" class="terminal-spacer" style="background-color: rgb(34, 34, 34); color: rgb(255, 255, 255);"><div _ngcontent-oyp-c8="" class="terminal-container scrollbar-hidden" style="background-color: rgb(34, 34, 34);"><div dir="ltr" class="terminal xterm xterm-dom-renderer-owner-1" tabindex="0"><div class="xterm-viewport" style="background-color: rgb(34, 34, 34); width: 1343px;"><div class="xterm-scroll-area" style="height: 375px;"></div></div><div class="xterm-screen" style="width: 1328px; height: 135px;"><div class="xterm-helpers"><textarea class="xterm-helper-textarea" aria-label="Terminal input" aria-multiline="false" autocorrect="off" autocapitalize="none" spellcheck="false" tabindex="0" style="left: 440px; top: 120px; width: 8px; height: 15px; line-height: 15px; z-index: -5;"></textarea><span class="xterm-char-measure-element" aria-hidden="true" style="font-family: &quot;courier new&quot;, courier, monospace; font-size: 13px;">W</span><div class="composition-view"></div></div><style>.xterm-dom-renderer-owner-1 .xterm-rows span{display:inline-block;height:100%;vertical-align:top;width:8px;}</style><style>.xterm-dom-renderer-owner-1 .xterm-rows{color:#ffffff;font-family:"courier new", courier, monospace;font-size:13px;}.xterm-dom-renderer-owner-1 span:not(.xterm-bold){font-weight:normal;}.xterm-dom-renderer-owner-1 span.xterm-bold{font-weight:bold;}.xterm-dom-renderer-owner-1 span.xterm-italic{font-style:italic;}@keyframes blink_box_shadow_1{50%{box-shadow:none;}}@keyframes blink_block_1{0%{background-color:#ffffff;color:#000000;}50%{background-color:#000000;color:#ffffff;}}.xterm-dom-renderer-owner-1 .xterm-rows:not(.xterm-focus) .xterm-cursor.xterm-cursor-block{outline:1px solid #ffffff;outline-offset:-1px;}.xterm-dom-renderer-owner-1 .xterm-rows.xterm-focus .xterm-cursor.xterm-cursor-blink:not(.xterm-cursor-block){animation:blink_box_shadow_1 1s step-end infinite;}.xterm-dom-renderer-owner-1 .xterm-rows.xterm-focus .xterm-cursor.xterm-cursor-blink.xterm-cursor-block{animation:blink_block_1 1s step-end infinite;}.xterm-dom-renderer-owner-1 .xterm-rows.xterm-focus .xterm-cursor.xterm-cursor-block{background-color:#ffffff;color:#000000;}.xterm-dom-renderer-owner-1 .xterm-rows .xterm-cursor.xterm-cursor-bar{box-shadow:1px 0 0 #ffffff inset;}.xterm-dom-renderer-owner-1 .xterm-rows .xterm-cursor.xterm-cursor-underline{box-shadow:0 -1px 0 #ffffff inset;}.xterm-dom-renderer-owner-1 .xterm-selection{position:absolute;top:0;left:0;z-index:1;pointer-events:none;}.xterm-dom-renderer-owner-1 .xterm-selection div{position:absolute;background-color:#ffffff4d;}.xterm-dom-renderer-owner-1 .xterm-fg-0{color:#2e3436;}.xterm-dom-renderer-owner-1 .xterm-bg-0{background-color:#2e3436;}.xterm-dom-renderer-owner-1 .xterm-fg-1{color:#cc0000;}.xterm-dom-renderer-owner-1 .xterm-bg-1{background-color:#cc0000;}.xterm-dom-renderer-owner-1 .xterm-fg-2{color:#4e9a06;}.xterm-dom-renderer-owner-1 .xterm-bg-2{background-color:#4e9a06;}.xterm-dom-renderer-owner-1 .xterm-fg-3{color:#c4a000;}.xterm-dom-renderer-owner-1 .xterm-bg-3{background-color:#c4a000;}.xterm-dom-renderer-owner-1 .xterm-fg-4{color:#3465a4;}.xterm-dom-renderer-owner-1 .xterm-bg-4{background-color:#3465a4;}.xterm-dom-renderer-owner-1 .xterm-fg-5{color:#75507b;}.xterm-dom-renderer-owner-1 .xterm-bg-5{background-color:#75507b;}.xterm-dom-renderer-owner-1 .xterm-fg-6{color:#06989a;}.xterm-dom-renderer-owner-1 .xterm-bg-6{background-color:#06989a;}.xterm-dom-renderer-owner-1 .xterm-fg-7{color:#d3d7cf;}.xterm-dom-renderer-owner-1 .xterm-bg-7{background-color:#d3d7cf;}.xterm-dom-renderer-owner-1 .xterm-fg-8{color:#555753;}.xterm-dom-renderer-owner-1 .xterm-bg-8{background-color:#555753;}.xterm-dom-renderer-owner-1 .xterm-fg-9{color:#ef2929;}.xterm-dom-renderer-owner-1 .xterm-bg-9{background-color:#ef2929;}.xterm-dom-renderer-owner-1 .xterm-fg-10{color:#8ae234;}.xterm-dom-renderer-owner-1 .xterm-bg-10{background-color:#8ae234;}.xterm-dom-renderer-owner-1 .xterm-fg-11{color:#fce94f;}.xterm-dom-renderer-owner-1 .xterm-bg-11{background-color:#fce94f;}.xterm-dom-renderer-owner-1 .xterm-fg-12{color:#729fcf;}.xterm-dom-renderer-owner-1 .xterm-bg-12{background-color:#729fcf;}.xterm-dom-renderer-owner-1 .xterm-fg-13{color:#ad7fa8;}.xterm-dom-renderer-owner-1 .xterm-bg-13{background-color:#ad7fa8;}.xterm-dom-renderer-owner-1 .xterm-fg-14{color:#34e2e2;}.xterm-dom-renderer-owner-1 .xterm-bg-14{background-color:#34e2e2;}.xterm-dom-renderer-owner-1 .xterm-fg-15{color:#eeeeec;}.xterm-dom-renderer-owner-1 .xterm-bg-15{background-color:#eeeeec;}.xterm-dom-renderer-owner-1 .xterm-fg-16{color:#000000;}.xterm-dom-renderer-owner-1 .xterm-bg-16{background-color:#000000;}.xterm-dom-renderer-owner-1 .xterm-fg-17{color:#00005f;}.xterm-dom-renderer-owner-1 .xterm-bg-17{background-color:#00005f;}.xterm-dom-renderer-owner-1 .xterm-fg-18{color:#000087;}.xterm-dom-renderer-owner-1 .xterm-bg-18{background-color:#000087;}.xterm-dom-renderer-owner-1 .xterm-fg-19{color:#0000af;}.xterm-dom-renderer-owner-1 .xterm-bg-19{background-color:#0000af;}.xterm-dom-renderer-owner-1 .xterm-fg-20{color:#0000d7;}.xterm-dom-renderer-owner-1 .xterm-bg-20{background-color:#0000d7;}.xterm-dom-renderer-owner-1 .xterm-fg-21{color:#0000ff;}.xterm-dom-renderer-owner-1 .xterm-bg-21{background-color:#0000ff;}.xterm-dom-renderer-owner-1 .xterm-fg-22{color:#005f00;}.xterm-dom-renderer-owner-1 .xterm-bg-22{background-color:#005f00;}.xterm-dom-renderer-owner-1 .xterm-fg-23{color:#005f5f;}.xterm-dom-renderer-owner-1 .xterm-bg-23{background-color:#005f5f;}.xterm-dom-renderer-owner-1 .xterm-fg-24{color:#005f87;}.xterm-dom-renderer-owner-1 .xterm-bg-24{background-color:#005f87;}.xterm-dom-renderer-owner-1 .xterm-fg-25{color:#005faf;}.xterm-dom-renderer-owner-1 .xterm-bg-25{background-color:#005faf;}.xterm-dom-renderer-owner-1 .xterm-fg-26{color:#005fd7;}.xterm-dom-renderer-owner-1 .xterm-bg-26{background-color:#005fd7;}.xterm-dom-renderer-owner-1 .xterm-fg-27{color:#005fff;}.xterm-dom-renderer-owner-1 .xterm-bg-27{background-color:#005fff;}.xterm-dom-renderer-owner-1 .xterm-fg-28{color:#008700;}.xterm-dom-renderer-owner-1 .xterm-bg-28{background-color:#008700;}.xterm-dom-renderer-owner-1 .xterm-fg-29{color:#00875f;}.xterm-dom-renderer-owner-1 .xterm-bg-29{background-color:#00875f;}.xterm-dom-renderer-owner-1 .xterm-fg-30{color:#008787;}.xterm-dom-renderer-owner-1 .xterm-bg-30{background-color:#008787;}.xterm-dom-renderer-owner-1 .xterm-fg-31{color:#0087af;}.xterm-dom-renderer-owner-1 .xterm-bg-31{background-color:#0087af;}.xterm-dom-renderer-owner-1 .xterm-fg-32{color:#0087d7;}.xterm-dom-renderer-owner-1 .xterm-bg-32{background-color:#0087d7;}.xterm-dom-renderer-owner-1 .xterm-fg-33{color:#0087ff;}.xterm-dom-renderer-owner-1 .xterm-bg-33{background-color:#0087ff;}.xterm-dom-renderer-owner-1 .xterm-fg-34{color:#00af00;}.xterm-dom-renderer-owner-1 .xterm-bg-34{background-color:#00af00;}.xterm-dom-renderer-owner-1 .xterm-fg-35{color:#00af5f;}.xterm-dom-renderer-owner-1 .xterm-bg-35{background-color:#00af5f;}.xterm-dom-renderer-owner-1 .xterm-fg-36{color:#00af87;}.xterm-dom-renderer-owner-1 .xterm-bg-36{background-color:#00af87;}.xterm-dom-renderer-owner-1 .xterm-fg-37{color:#00afaf;}.xterm-dom-renderer-owner-1 .xterm-bg-37{background-color:#00afaf;}.xterm-dom-renderer-owner-1 .xterm-fg-38{color:#00afd7;}.xterm-dom-renderer-owner-1 .xterm-bg-38{background-color:#00afd7;}.xterm-dom-renderer-owner-1 .xterm-fg-39{color:#00afff;}.xterm-dom-renderer-owner-1 .xterm-bg-39{background-color:#00afff;}.xterm-dom-renderer-owner-1 .xterm-fg-40{color:#00d700;}.xterm-dom-renderer-owner-1 .xterm-bg-40{background-color:#00d700;}.xterm-dom-renderer-owner-1 .xterm-fg-41{color:#00d75f;}.xterm-dom-renderer-owner-1 .xterm-bg-41{background-color:#00d75f;}.xterm-dom-renderer-owner-1 .xterm-fg-42{color:#00d787;}.xterm-dom-renderer-owner-1 .xterm-bg-42{background-color:#00d787;}.xterm-dom-renderer-owner-1 .xterm-fg-43{color:#00d7af;}.xterm-dom-renderer-owner-1 .xterm-bg-43{background-color:#00d7af;}.xterm-dom-renderer-owner-1 .xterm-fg-44{color:#00d7d7;}.xterm-dom-renderer-owner-1 .xterm-bg-44{background-color:#00d7d7;}.xterm-dom-renderer-owner-1 .xterm-fg-45{color:#00d7ff;}.xterm-dom-renderer-owner-1 .xterm-bg-45{background-color:#00d7ff;}.xterm-dom-renderer-owner-1 .xterm-fg-46{color:#00ff00;}.xterm-dom-renderer-owner-1 .xterm-bg-46{background-color:#00ff00;}.xterm-dom-renderer-owner-1 .xterm-fg-47{color:#00ff5f;}.xterm-dom-renderer-owner-1 .xterm-bg-47{background-color:#00ff5f;}.xterm-dom-renderer-owner-1 .xterm-fg-48{color:#00ff87;}.xterm-dom-renderer-owner-1 .xterm-bg-48{background-color:#00ff87;}.xterm-dom-renderer-owner-1 .xterm-fg-49{color:#00ffaf;}.xterm-dom-renderer-owner-1 .xterm-bg-49{background-color:#00ffaf;}.xterm-dom-renderer-owner-1 .xterm-fg-50{color:#00ffd7;}.xterm-dom-renderer-owner-1 .xterm-bg-50{background-color:#00ffd7;}.xterm-dom-renderer-owner-1 .xterm-fg-51{color:#00ffff;}.xterm-dom-renderer-owner-1 .xterm-bg-51{background-color:#00ffff;}.xterm-dom-renderer-owner-1 .xterm-fg-52{color:#5f0000;}.xterm-dom-renderer-owner-1 .xterm-bg-52{background-color:#5f0000;}.xterm-dom-renderer-owner-1 .xterm-fg-53{color:#5f005f;}.xterm-dom-renderer-owner-1 .xterm-bg-53{background-color:#5f005f;}.xterm-dom-renderer-owner-1 .xterm-fg-54{color:#5f0087;}.xterm-dom-renderer-owner-1 .xterm-bg-54{background-color:#5f0087;}.xterm-dom-renderer-owner-1 .xterm-fg-55{color:#5f00af;}.xterm-dom-renderer-owner-1 .xterm-bg-55{background-color:#5f00af;}.xterm-dom-renderer-owner-1 .xterm-fg-56{color:#5f00d7;}.xterm-dom-renderer-owner-1 .xterm-bg-56{background-color:#5f00d7;}.xterm-dom-renderer-owner-1 .xterm-fg-57{color:#5f00ff;}.xterm-dom-renderer-owner-1 .xterm-bg-57{background-color:#5f00ff;}.xterm-dom-renderer-owner-1 .xterm-fg-58{color:#5f5f00;}.xterm-dom-renderer-owner-1 .xterm-bg-58{background-color:#5f5f00;}.xterm-dom-renderer-owner-1 .xterm-fg-59{color:#5f5f5f;}.xterm-dom-renderer-owner-1 .xterm-bg-59{background-color:#5f5f5f;}.xterm-dom-renderer-owner-1 .xterm-fg-60{color:#5f5f87;}.xterm-dom-renderer-owner-1 .xterm-bg-60{background-color:#5f5f87;}.xterm-dom-renderer-owner-1 .xterm-fg-61{color:#5f5faf;}.xterm-dom-renderer-owner-1 .xterm-bg-61{background-color:#5f5faf;}.xterm-dom-renderer-owner-1 .xterm-fg-62{color:#5f5fd7;}.xterm-dom-renderer-owner-1 .xterm-bg-62{background-color:#5f5fd7;}.xterm-dom-renderer-owner-1 .xterm-fg-63{color:#5f5fff;}.xterm-dom-renderer-owner-1 .xterm-bg-63{background-color:#5f5fff;}.xterm-dom-renderer-owner-1 .xterm-fg-64{color:#5f8700;}.xterm-dom-renderer-owner-1 .xterm-bg-64{background-color:#5f8700;}.xterm-dom-renderer-owner-1 .xterm-fg-65{color:#5f875f;}.xterm-dom-renderer-owner-1 .xterm-bg-65{background-color:#5f875f;}.xterm-dom-renderer-owner-1 .xterm-fg-66{color:#5f8787;}.xterm-dom-renderer-owner-1 .xterm-bg-66{background-color:#5f8787;}.xterm-dom-renderer-owner-1 .xterm-fg-67{color:#5f87af;}.xterm-dom-renderer-owner-1 .xterm-bg-67{background-color:#5f87af;}.xterm-dom-renderer-owner-1 .xterm-fg-68{color:#5f87d7;}.xterm-dom-renderer-owner-1 .xterm-bg-68{background-color:#5f87d7;}.xterm-dom-renderer-owner-1 .xterm-fg-69{color:#5f87ff;}.xterm-dom-renderer-owner-1 .xterm-bg-69{background-color:#5f87ff;}.xterm-dom-renderer-owner-1 .xterm-fg-70{color:#5faf00;}.xterm-dom-renderer-owner-1 .xterm-bg-70{background-color:#5faf00;}.xterm-dom-renderer-owner-1 .xterm-fg-71{color:#5faf5f;}.xterm-dom-renderer-owner-1 .xterm-bg-71{background-color:#5faf5f;}.xterm-dom-renderer-owner-1 .xterm-fg-72{color:#5faf87;}.xterm-dom-renderer-owner-1 .xterm-bg-72{background-color:#5faf87;}.xterm-dom-renderer-owner-1 .xterm-fg-73{color:#5fafaf;}.xterm-dom-renderer-owner-1 .xterm-bg-73{background-color:#5fafaf;}.xterm-dom-renderer-owner-1 .xterm-fg-74{color:#5fafd7;}.xterm-dom-renderer-owner-1 .xterm-bg-74{background-color:#5fafd7;}.xterm-dom-renderer-owner-1 .xterm-fg-75{color:#5fafff;}.xterm-dom-renderer-owner-1 .xterm-bg-75{background-color:#5fafff;}.xterm-dom-renderer-owner-1 .xterm-fg-76{color:#5fd700;}.xterm-dom-renderer-owner-1 .xterm-bg-76{background-color:#5fd700;}.xterm-dom-renderer-owner-1 .xterm-fg-77{color:#5fd75f;}.xterm-dom-renderer-owner-1 .xterm-bg-77{background-color:#5fd75f;}.xterm-dom-renderer-owner-1 .xterm-fg-78{color:#5fd787;}.xterm-dom-renderer-owner-1 .xterm-bg-78{background-color:#5fd787;}.xterm-dom-renderer-owner-1 .xterm-fg-79{color:#5fd7af;}.xterm-dom-renderer-owner-1 .xterm-bg-79{background-color:#5fd7af;}.xterm-dom-renderer-owner-1 .xterm-fg-80{color:#5fd7d7;}.xterm-dom-renderer-owner-1 .xterm-bg-80{background-color:#5fd7d7;}.xterm-dom-renderer-owner-1 .xterm-fg-81{color:#5fd7ff;}.xterm-dom-renderer-owner-1 .xterm-bg-81{background-color:#5fd7ff;}.xterm-dom-renderer-owner-1 .xterm-fg-82{color:#5fff00;}.xterm-dom-renderer-owner-1 .xterm-bg-82{background-color:#5fff00;}.xterm-dom-renderer-owner-1 .xterm-fg-83{color:#5fff5f;}.xterm-dom-renderer-owner-1 .xterm-bg-83{background-color:#5fff5f;}.xterm-dom-renderer-owner-1 .xterm-fg-84{color:#5fff87;}.xterm-dom-renderer-owner-1 .xterm-bg-84{background-color:#5fff87;}.xterm-dom-renderer-owner-1 .xterm-fg-85{color:#5fffaf;}.xterm-dom-renderer-owner-1 .xterm-bg-85{background-color:#5fffaf;}.xterm-dom-renderer-owner-1 .xterm-fg-86{color:#5fffd7;}.xterm-dom-renderer-owner-1 .xterm-bg-86{background-color:#5fffd7;}.xterm-dom-renderer-owner-1 .xterm-fg-87{color:#5fffff;}.xterm-dom-renderer-owner-1 .xterm-bg-87{background-color:#5fffff;}.xterm-dom-renderer-owner-1 .xterm-fg-88{color:#870000;}.xterm-dom-renderer-owner-1 .xterm-bg-88{background-color:#870000;}.xterm-dom-renderer-owner-1 .xterm-fg-89{color:#87005f;}.xterm-dom-renderer-owner-1 .xterm-bg-89{background-color:#87005f;}.xterm-dom-renderer-owner-1 .xterm-fg-90{color:#870087;}.xterm-dom-renderer-owner-1 .xterm-bg-90{background-color:#870087;}.xterm-dom-renderer-owner-1 .xterm-fg-91{color:#8700af;}.xterm-dom-renderer-owner-1 .xterm-bg-91{background-color:#8700af;}.xterm-dom-renderer-owner-1 .xterm-fg-92{color:#8700d7;}.xterm-dom-renderer-owner-1 .xterm-bg-92{background-color:#8700d7;}.xterm-dom-renderer-owner-1 .xterm-fg-93{color:#8700ff;}.xterm-dom-renderer-owner-1 .xterm-bg-93{background-color:#8700ff;}.xterm-dom-renderer-owner-1 .xterm-fg-94{color:#875f00;}.xterm-dom-renderer-owner-1 .xterm-bg-94{background-color:#875f00;}.xterm-dom-renderer-owner-1 .xterm-fg-95{color:#875f5f;}.xterm-dom-renderer-owner-1 .xterm-bg-95{background-color:#875f5f;}.xterm-dom-renderer-owner-1 .xterm-fg-96{color:#875f87;}.xterm-dom-renderer-owner-1 .xterm-bg-96{background-color:#875f87;}.xterm-dom-renderer-owner-1 .xterm-fg-97{color:#875faf;}.xterm-dom-renderer-owner-1 .xterm-bg-97{background-color:#875faf;}.xterm-dom-renderer-owner-1 .xterm-fg-98{color:#875fd7;}.xterm-dom-renderer-owner-1 .xterm-bg-98{background-color:#875fd7;}.xterm-dom-renderer-owner-1 .xterm-fg-99{color:#875fff;}.xterm-dom-renderer-owner-1 .xterm-bg-99{background-color:#875fff;}.xterm-dom-renderer-owner-1 .xterm-fg-100{color:#878700;}.xterm-dom-renderer-owner-1 .xterm-bg-100{background-color:#878700;}.xterm-dom-renderer-owner-1 .xterm-fg-101{color:#87875f;}.xterm-dom-renderer-owner-1 .xterm-bg-101{background-color:#87875f;}.xterm-dom-renderer-owner-1 .xterm-fg-102{color:#878787;}.xterm-dom-renderer-owner-1 .xterm-bg-102{background-color:#878787;}.xterm-dom-renderer-owner-1 .xterm-fg-103{color:#8787af;}.xterm-dom-renderer-owner-1 .xterm-bg-103{background-color:#8787af;}.xterm-dom-renderer-owner-1 .xterm-fg-104{color:#8787d7;}.xterm-dom-renderer-owner-1 .xterm-bg-104{background-color:#8787d7;}.xterm-dom-renderer-owner-1 .xterm-fg-105{color:#8787ff;}.xterm-dom-renderer-owner-1 .xterm-bg-105{background-color:#8787ff;}.xterm-dom-renderer-owner-1 .xterm-fg-106{color:#87af00;}.xterm-dom-renderer-owner-1 .xterm-bg-106{background-color:#87af00;}.xterm-dom-renderer-owner-1 .xterm-fg-107{color:#87af5f;}.xterm-dom-renderer-owner-1 .xterm-bg-107{background-color:#87af5f;}.xterm-dom-renderer-owner-1 .xterm-fg-108{color:#87af87;}.xterm-dom-renderer-owner-1 .xterm-bg-108{background-color:#87af87;}.xterm-dom-renderer-owner-1 .xterm-fg-109{color:#87afaf;}.xterm-dom-renderer-owner-1 .xterm-bg-109{background-color:#87afaf;}.xterm-dom-renderer-owner-1 .xterm-fg-110{color:#87afd7;}.xterm-dom-renderer-owner-1 .xterm-bg-110{background-color:#87afd7;}.xterm-dom-renderer-owner-1 .xterm-fg-111{color:#87afff;}.xterm-dom-renderer-owner-1 .xterm-bg-111{background-color:#87afff;}.xterm-dom-renderer-owner-1 .xterm-fg-112{color:#87d700;}.xterm-dom-renderer-owner-1 .xterm-bg-112{background-color:#87d700;}.xterm-dom-renderer-owner-1 .xterm-fg-113{color:#87d75f;}.xterm-dom-renderer-owner-1 .xterm-bg-113{background-color:#87d75f;}.xterm-dom-renderer-owner-1 .xterm-fg-114{color:#87d787;}.xterm-dom-renderer-owner-1 .xterm-bg-114{background-color:#87d787;}.xterm-dom-renderer-owner-1 .xterm-fg-115{color:#87d7af;}.xterm-dom-renderer-owner-1 .xterm-bg-115{background-color:#87d7af;}.xterm-dom-renderer-owner-1 .xterm-fg-116{color:#87d7d7;}.xterm-dom-renderer-owner-1 .xterm-bg-116{background-color:#87d7d7;}.xterm-dom-renderer-owner-1 .xterm-fg-117{color:#87d7ff;}.xterm-dom-renderer-owner-1 .xterm-bg-117{background-color:#87d7ff;}.xterm-dom-renderer-owner-1 .xterm-fg-118{color:#87ff00;}.xterm-dom-renderer-owner-1 .xterm-bg-118{background-color:#87ff00;}.xterm-dom-renderer-owner-1 .xterm-fg-119{color:#87ff5f;}.xterm-dom-renderer-owner-1 .xterm-bg-119{background-color:#87ff5f;}.xterm-dom-renderer-owner-1 .xterm-fg-120{color:#87ff87;}.xterm-dom-renderer-owner-1 .xterm-bg-120{background-color:#87ff87;}.xterm-dom-renderer-owner-1 .xterm-fg-121{color:#87ffaf;}.xterm-dom-renderer-owner-1 .xterm-bg-121{background-color:#87ffaf;}.xterm-dom-renderer-owner-1 .xterm-fg-122{color:#87ffd7;}.xterm-dom-renderer-owner-1 .xterm-bg-122{background-color:#87ffd7;}.xterm-dom-renderer-owner-1 .xterm-fg-123{color:#87ffff;}.xterm-dom-renderer-owner-1 .xterm-bg-123{background-color:#87ffff;}.xterm-dom-renderer-owner-1 .xterm-fg-124{color:#af0000;}.xterm-dom-renderer-owner-1 .xterm-bg-124{background-color:#af0000;}.xterm-dom-renderer-owner-1 .xterm-fg-125{color:#af005f;}.xterm-dom-renderer-owner-1 .xterm-bg-125{background-color:#af005f;}.xterm-dom-renderer-owner-1 .xterm-fg-126{color:#af0087;}.xterm-dom-renderer-owner-1 .xterm-bg-126{background-color:#af0087;}.xterm-dom-renderer-owner-1 .xterm-fg-127{color:#af00af;}.xterm-dom-renderer-owner-1 .xterm-bg-127{background-color:#af00af;}.xterm-dom-renderer-owner-1 .xterm-fg-128{color:#af00d7;}.xterm-dom-renderer-owner-1 .xterm-bg-128{background-color:#af00d7;}.xterm-dom-renderer-owner-1 .xterm-fg-129{color:#af00ff;}.xterm-dom-renderer-owner-1 .xterm-bg-129{background-color:#af00ff;}.xterm-dom-renderer-owner-1 .xterm-fg-130{color:#af5f00;}.xterm-dom-renderer-owner-1 .xterm-bg-130{background-color:#af5f00;}.xterm-dom-renderer-owner-1 .xterm-fg-131{color:#af5f5f;}.xterm-dom-renderer-owner-1 .xterm-bg-131{background-color:#af5f5f;}.xterm-dom-renderer-owner-1 .xterm-fg-132{color:#af5f87;}.xterm-dom-renderer-owner-1 .xterm-bg-132{background-color:#af5f87;}.xterm-dom-renderer-owner-1 .xterm-fg-133{color:#af5faf;}.xterm-dom-renderer-owner-1 .xterm-bg-133{background-color:#af5faf;}.xterm-dom-renderer-owner-1 .xterm-fg-134{color:#af5fd7;}.xterm-dom-renderer-owner-1 .xterm-bg-134{background-color:#af5fd7;}.xterm-dom-renderer-owner-1 .xterm-fg-135{color:#af5fff;}.xterm-dom-renderer-owner-1 .xterm-bg-135{background-color:#af5fff;}.xterm-dom-renderer-owner-1 .xterm-fg-136{color:#af8700;}.xterm-dom-renderer-owner-1 .xterm-bg-136{background-color:#af8700;}.xterm-dom-renderer-owner-1 .xterm-fg-137{color:#af875f;}.xterm-dom-renderer-owner-1 .xterm-bg-137{background-color:#af875f;}.xterm-dom-renderer-owner-1 .xterm-fg-138{color:#af8787;}.xterm-dom-renderer-owner-1 .xterm-bg-138{background-color:#af8787;}.xterm-dom-renderer-owner-1 .xterm-fg-139{color:#af87af;}.xterm-dom-renderer-owner-1 .xterm-bg-139{background-color:#af87af;}.xterm-dom-renderer-owner-1 .xterm-fg-140{color:#af87d7;}.xterm-dom-renderer-owner-1 .xterm-bg-140{background-color:#af87d7;}.xterm-dom-renderer-owner-1 .xterm-fg-141{color:#af87ff;}.xterm-dom-renderer-owner-1 .xterm-bg-141{background-color:#af87ff;}.xterm-dom-renderer-owner-1 .xterm-fg-142{color:#afaf00;}.xterm-dom-renderer-owner-1 .xterm-bg-142{background-color:#afaf00;}.xterm-dom-renderer-owner-1 .xterm-fg-143{color:#afaf5f;}.xterm-dom-renderer-owner-1 .xterm-bg-143{background-color:#afaf5f;}.xterm-dom-renderer-owner-1 .xterm-fg-144{color:#afaf87;}.xterm-dom-renderer-owner-1 .xterm-bg-144{background-color:#afaf87;}.xterm-dom-renderer-owner-1 .xterm-fg-145{color:#afafaf;}.xterm-dom-renderer-owner-1 .xterm-bg-145{background-color:#afafaf;}.xterm-dom-renderer-owner-1 .xterm-fg-146{color:#afafd7;}.xterm-dom-renderer-owner-1 .xterm-bg-146{background-color:#afafd7;}.xterm-dom-renderer-owner-1 .xterm-fg-147{color:#afafff;}.xterm-dom-renderer-owner-1 .xterm-bg-147{background-color:#afafff;}.xterm-dom-renderer-owner-1 .xterm-fg-148{color:#afd700;}.xterm-dom-renderer-owner-1 .xterm-bg-148{background-color:#afd700;}.xterm-dom-renderer-owner-1 .xterm-fg-149{color:#afd75f;}.xterm-dom-renderer-owner-1 .xterm-bg-149{background-color:#afd75f;}.xterm-dom-renderer-owner-1 .xterm-fg-150{color:#afd787;}.xterm-dom-renderer-owner-1 .xterm-bg-150{background-color:#afd787;}.xterm-dom-renderer-owner-1 .xterm-fg-151{color:#afd7af;}.xterm-dom-renderer-owner-1 .xterm-bg-151{background-color:#afd7af;}.xterm-dom-renderer-owner-1 .xterm-fg-152{color:#afd7d7;}.xterm-dom-renderer-owner-1 .xterm-bg-152{background-color:#afd7d7;}.xterm-dom-renderer-owner-1 .xterm-fg-153{color:#afd7ff;}.xterm-dom-renderer-owner-1 .xterm-bg-153{background-color:#afd7ff;}.xterm-dom-renderer-owner-1 .xterm-fg-154{color:#afff00;}.xterm-dom-renderer-owner-1 .xterm-bg-154{background-color:#afff00;}.xterm-dom-renderer-owner-1 .xterm-fg-155{color:#afff5f;}.xterm-dom-renderer-owner-1 .xterm-bg-155{background-color:#afff5f;}.xterm-dom-renderer-owner-1 .xterm-fg-156{color:#afff87;}.xterm-dom-renderer-owner-1 .xterm-bg-156{background-color:#afff87;}.xterm-dom-renderer-owner-1 .xterm-fg-157{color:#afffaf;}.xterm-dom-renderer-owner-1 .xterm-bg-157{background-color:#afffaf;}.xterm-dom-renderer-owner-1 .xterm-fg-158{color:#afffd7;}.xterm-dom-renderer-owner-1 .xterm-bg-158{background-color:#afffd7;}.xterm-dom-renderer-owner-1 .xterm-fg-159{color:#afffff;}.xterm-dom-renderer-owner-1 .xterm-bg-159{background-color:#afffff;}.xterm-dom-renderer-owner-1 .xterm-fg-160{color:#d70000;}.xterm-dom-renderer-owner-1 .xterm-bg-160{background-color:#d70000;}.xterm-dom-renderer-owner-1 .xterm-fg-161{color:#d7005f;}.xterm-dom-renderer-owner-1 .xterm-bg-161{background-color:#d7005f;}.xterm-dom-renderer-owner-1 .xterm-fg-162{color:#d70087;}.xterm-dom-renderer-owner-1 .xterm-bg-162{background-color:#d70087;}.xterm-dom-renderer-owner-1 .xterm-fg-163{color:#d700af;}.xterm-dom-renderer-owner-1 .xterm-bg-163{background-color:#d700af;}.xterm-dom-renderer-owner-1 .xterm-fg-164{color:#d700d7;}.xterm-dom-renderer-owner-1 .xterm-bg-164{background-color:#d700d7;}.xterm-dom-renderer-owner-1 .xterm-fg-165{color:#d700ff;}.xterm-dom-renderer-owner-1 .xterm-bg-165{background-color:#d700ff;}.xterm-dom-renderer-owner-1 .xterm-fg-166{color:#d75f00;}.xterm-dom-renderer-owner-1 .xterm-bg-166{background-color:#d75f00;}.xterm-dom-renderer-owner-1 .xterm-fg-167{color:#d75f5f;}.xterm-dom-renderer-owner-1 .xterm-bg-167{background-color:#d75f5f;}.xterm-dom-renderer-owner-1 .xterm-fg-168{color:#d75f87;}.xterm-dom-renderer-owner-1 .xterm-bg-168{background-color:#d75f87;}.xterm-dom-renderer-owner-1 .xterm-fg-169{color:#d75faf;}.xterm-dom-renderer-owner-1 .xterm-bg-169{background-color:#d75faf;}.xterm-dom-renderer-owner-1 .xterm-fg-170{color:#d75fd7;}.xterm-dom-renderer-owner-1 .xterm-bg-170{background-color:#d75fd7;}.xterm-dom-renderer-owner-1 .xterm-fg-171{color:#d75fff;}.xterm-dom-renderer-owner-1 .xterm-bg-171{background-color:#d75fff;}.xterm-dom-renderer-owner-1 .xterm-fg-172{color:#d78700;}.xterm-dom-renderer-owner-1 .xterm-bg-172{background-color:#d78700;}.xterm-dom-renderer-owner-1 .xterm-fg-173{color:#d7875f;}.xterm-dom-renderer-owner-1 .xterm-bg-173{background-color:#d7875f;}.xterm-dom-renderer-owner-1 .xterm-fg-174{color:#d78787;}.xterm-dom-renderer-owner-1 .xterm-bg-174{background-color:#d78787;}.xterm-dom-renderer-owner-1 .xterm-fg-175{color:#d787af;}.xterm-dom-renderer-owner-1 .xterm-bg-175{background-color:#d787af;}.xterm-dom-renderer-owner-1 .xterm-fg-176{color:#d787d7;}.xterm-dom-renderer-owner-1 .xterm-bg-176{background-color:#d787d7;}.xterm-dom-renderer-owner-1 .xterm-fg-177{color:#d787ff;}.xterm-dom-renderer-owner-1 .xterm-bg-177{background-color:#d787ff;}.xterm-dom-renderer-owner-1 .xterm-fg-178{color:#d7af00;}.xterm-dom-renderer-owner-1 .xterm-bg-178{background-color:#d7af00;}.xterm-dom-renderer-owner-1 .xterm-fg-179{color:#d7af5f;}.xterm-dom-renderer-owner-1 .xterm-bg-179{background-color:#d7af5f;}.xterm-dom-renderer-owner-1 .xterm-fg-180{color:#d7af87;}.xterm-dom-renderer-owner-1 .xterm-bg-180{background-color:#d7af87;}.xterm-dom-renderer-owner-1 .xterm-fg-181{color:#d7afaf;}.xterm-dom-renderer-owner-1 .xterm-bg-181{background-color:#d7afaf;}.xterm-dom-renderer-owner-1 .xterm-fg-182{color:#d7afd7;}.xterm-dom-renderer-owner-1 .xterm-bg-182{background-color:#d7afd7;}.xterm-dom-renderer-owner-1 .xterm-fg-183{color:#d7afff;}.xterm-dom-renderer-owner-1 .xterm-bg-183{background-color:#d7afff;}.xterm-dom-renderer-owner-1 .xterm-fg-184{color:#d7d700;}.xterm-dom-renderer-owner-1 .xterm-bg-184{background-color:#d7d700;}.xterm-dom-renderer-owner-1 .xterm-fg-185{color:#d7d75f;}.xterm-dom-renderer-owner-1 .xterm-bg-185{background-color:#d7d75f;}.xterm-dom-renderer-owner-1 .xterm-fg-186{color:#d7d787;}.xterm-dom-renderer-owner-1 .xterm-bg-186{background-color:#d7d787;}.xterm-dom-renderer-owner-1 .xterm-fg-187{color:#d7d7af;}.xterm-dom-renderer-owner-1 .xterm-bg-187{background-color:#d7d7af;}.xterm-dom-renderer-owner-1 .xterm-fg-188{color:#d7d7d7;}.xterm-dom-renderer-owner-1 .xterm-bg-188{background-color:#d7d7d7;}.xterm-dom-renderer-owner-1 .xterm-fg-189{color:#d7d7ff;}.xterm-dom-renderer-owner-1 .xterm-bg-189{background-color:#d7d7ff;}.xterm-dom-renderer-owner-1 .xterm-fg-190{color:#d7ff00;}.xterm-dom-renderer-owner-1 .xterm-bg-190{background-color:#d7ff00;}.xterm-dom-renderer-owner-1 .xterm-fg-191{color:#d7ff5f;}.xterm-dom-renderer-owner-1 .xterm-bg-191{background-color:#d7ff5f;}.xterm-dom-renderer-owner-1 .xterm-fg-192{color:#d7ff87;}.xterm-dom-renderer-owner-1 .xterm-bg-192{background-color:#d7ff87;}.xterm-dom-renderer-owner-1 .xterm-fg-193{color:#d7ffaf;}.xterm-dom-renderer-owner-1 .xterm-bg-193{background-color:#d7ffaf;}.xterm-dom-renderer-owner-1 .xterm-fg-194{color:#d7ffd7;}.xterm-dom-renderer-owner-1 .xterm-bg-194{background-color:#d7ffd7;}.xterm-dom-renderer-owner-1 .xterm-fg-195{color:#d7ffff;}.xterm-dom-renderer-owner-1 .xterm-bg-195{background-color:#d7ffff;}.xterm-dom-renderer-owner-1 .xterm-fg-196{color:#ff0000;}.xterm-dom-renderer-owner-1 .xterm-bg-196{background-color:#ff0000;}.xterm-dom-renderer-owner-1 .xterm-fg-197{color:#ff005f;}.xterm-dom-renderer-owner-1 .xterm-bg-197{background-color:#ff005f;}.xterm-dom-renderer-owner-1 .xterm-fg-198{color:#ff0087;}.xterm-dom-renderer-owner-1 .xterm-bg-198{background-color:#ff0087;}.xterm-dom-renderer-owner-1 .xterm-fg-199{color:#ff00af;}.xterm-dom-renderer-owner-1 .xterm-bg-199{background-color:#ff00af;}.xterm-dom-renderer-owner-1 .xterm-fg-200{color:#ff00d7;}.xterm-dom-renderer-owner-1 .xterm-bg-200{background-color:#ff00d7;}.xterm-dom-renderer-owner-1 .xterm-fg-201{color:#ff00ff;}.xterm-dom-renderer-owner-1 .xterm-bg-201{background-color:#ff00ff;}.xterm-dom-renderer-owner-1 .xterm-fg-202{color:#ff5f00;}.xterm-dom-renderer-owner-1 .xterm-bg-202{background-color:#ff5f00;}.xterm-dom-renderer-owner-1 .xterm-fg-203{color:#ff5f5f;}.xterm-dom-renderer-owner-1 .xterm-bg-203{background-color:#ff5f5f;}.xterm-dom-renderer-owner-1 .xterm-fg-204{color:#ff5f87;}.xterm-dom-renderer-owner-1 .xterm-bg-204{background-color:#ff5f87;}.xterm-dom-renderer-owner-1 .xterm-fg-205{color:#ff5faf;}.xterm-dom-renderer-owner-1 .xterm-bg-205{background-color:#ff5faf;}.xterm-dom-renderer-owner-1 .xterm-fg-206{color:#ff5fd7;}.xterm-dom-renderer-owner-1 .xterm-bg-206{background-color:#ff5fd7;}.xterm-dom-renderer-owner-1 .xterm-fg-207{color:#ff5fff;}.xterm-dom-renderer-owner-1 .xterm-bg-207{background-color:#ff5fff;}.xterm-dom-renderer-owner-1 .xterm-fg-208{color:#ff8700;}.xterm-dom-renderer-owner-1 .xterm-bg-208{background-color:#ff8700;}.xterm-dom-renderer-owner-1 .xterm-fg-209{color:#ff875f;}.xterm-dom-renderer-owner-1 .xterm-bg-209{background-color:#ff875f;}.xterm-dom-renderer-owner-1 .xterm-fg-210{color:#ff8787;}.xterm-dom-renderer-owner-1 .xterm-bg-210{background-color:#ff8787;}.xterm-dom-renderer-owner-1 .xterm-fg-211{color:#ff87af;}.xterm-dom-renderer-owner-1 .xterm-bg-211{background-color:#ff87af;}.xterm-dom-renderer-owner-1 .xterm-fg-212{color:#ff87d7;}.xterm-dom-renderer-owner-1 .xterm-bg-212{background-color:#ff87d7;}.xterm-dom-renderer-owner-1 .xterm-fg-213{color:#ff87ff;}.xterm-dom-renderer-owner-1 .xterm-bg-213{background-color:#ff87ff;}.xterm-dom-renderer-owner-1 .xterm-fg-214{color:#ffaf00;}.xterm-dom-renderer-owner-1 .xterm-bg-214{background-color:#ffaf00;}.xterm-dom-renderer-owner-1 .xterm-fg-215{color:#ffaf5f;}.xterm-dom-renderer-owner-1 .xterm-bg-215{background-color:#ffaf5f;}.xterm-dom-renderer-owner-1 .xterm-fg-216{color:#ffaf87;}.xterm-dom-renderer-owner-1 .xterm-bg-216{background-color:#ffaf87;}.xterm-dom-renderer-owner-1 .xterm-fg-217{color:#ffafaf;}.xterm-dom-renderer-owner-1 .xterm-bg-217{background-color:#ffafaf;}.xterm-dom-renderer-owner-1 .xterm-fg-218{color:#ffafd7;}.xterm-dom-renderer-owner-1 .xterm-bg-218{background-color:#ffafd7;}.xterm-dom-renderer-owner-1 .xterm-fg-219{color:#ffafff;}.xterm-dom-renderer-owner-1 .xterm-bg-219{background-color:#ffafff;}.xterm-dom-renderer-owner-1 .xterm-fg-220{color:#ffd700;}.xterm-dom-renderer-owner-1 .xterm-bg-220{background-color:#ffd700;}.xterm-dom-renderer-owner-1 .xterm-fg-221{color:#ffd75f;}.xterm-dom-renderer-owner-1 .xterm-bg-221{background-color:#ffd75f;}.xterm-dom-renderer-owner-1 .xterm-fg-222{color:#ffd787;}.xterm-dom-renderer-owner-1 .xterm-bg-222{background-color:#ffd787;}.xterm-dom-renderer-owner-1 .xterm-fg-223{color:#ffd7af;}.xterm-dom-renderer-owner-1 .xterm-bg-223{background-color:#ffd7af;}.xterm-dom-renderer-owner-1 .xterm-fg-224{color:#ffd7d7;}.xterm-dom-renderer-owner-1 .xterm-bg-224{background-color:#ffd7d7;}.xterm-dom-renderer-owner-1 .xterm-fg-225{color:#ffd7ff;}.xterm-dom-renderer-owner-1 .xterm-bg-225{background-color:#ffd7ff;}.xterm-dom-renderer-owner-1 .xterm-fg-226{color:#ffff00;}.xterm-dom-renderer-owner-1 .xterm-bg-226{background-color:#ffff00;}.xterm-dom-renderer-owner-1 .xterm-fg-227{color:#ffff5f;}.xterm-dom-renderer-owner-1 .xterm-bg-227{background-color:#ffff5f;}.xterm-dom-renderer-owner-1 .xterm-fg-228{color:#ffff87;}.xterm-dom-renderer-owner-1 .xterm-bg-228{background-color:#ffff87;}.xterm-dom-renderer-owner-1 .xterm-fg-229{color:#ffffaf;}.xterm-dom-renderer-owner-1 .xterm-bg-229{background-color:#ffffaf;}.xterm-dom-renderer-owner-1 .xterm-fg-230{color:#ffffd7;}.xterm-dom-renderer-owner-1 .xterm-bg-230{background-color:#ffffd7;}.xterm-dom-renderer-owner-1 .xterm-fg-231{color:#ffffff;}.xterm-dom-renderer-owner-1 .xterm-bg-231{background-color:#ffffff;}.xterm-dom-renderer-owner-1 .xterm-fg-232{color:#080808;}.xterm-dom-renderer-owner-1 .xterm-bg-232{background-color:#080808;}.xterm-dom-renderer-owner-1 .xterm-fg-233{color:#121212;}.xterm-dom-renderer-owner-1 .xterm-bg-233{background-color:#121212;}.xterm-dom-renderer-owner-1 .xterm-fg-234{color:#1c1c1c;}.xterm-dom-renderer-owner-1 .xterm-bg-234{background-color:#1c1c1c;}.xterm-dom-renderer-owner-1 .xterm-fg-235{color:#262626;}.xterm-dom-renderer-owner-1 .xterm-bg-235{background-color:#262626;}.xterm-dom-renderer-owner-1 .xterm-fg-236{color:#303030;}.xterm-dom-renderer-owner-1 .xterm-bg-236{background-color:#303030;}.xterm-dom-renderer-owner-1 .xterm-fg-237{color:#3a3a3a;}.xterm-dom-renderer-owner-1 .xterm-bg-237{background-color:#3a3a3a;}.xterm-dom-renderer-owner-1 .xterm-fg-238{color:#444444;}.xterm-dom-renderer-owner-1 .xterm-bg-238{background-color:#444444;}.xterm-dom-renderer-owner-1 .xterm-fg-239{color:#4e4e4e;}.xterm-dom-renderer-owner-1 .xterm-bg-239{background-color:#4e4e4e;}.xterm-dom-renderer-owner-1 .xterm-fg-240{color:#585858;}.xterm-dom-renderer-owner-1 .xterm-bg-240{background-color:#585858;}.xterm-dom-renderer-owner-1 .xterm-fg-241{color:#626262;}.xterm-dom-renderer-owner-1 .xterm-bg-241{background-color:#626262;}.xterm-dom-renderer-owner-1 .xterm-fg-242{color:#6c6c6c;}.xterm-dom-renderer-owner-1 .xterm-bg-242{background-color:#6c6c6c;}.xterm-dom-renderer-owner-1 .xterm-fg-243{color:#767676;}.xterm-dom-renderer-owner-1 .xterm-bg-243{background-color:#767676;}.xterm-dom-renderer-owner-1 .xterm-fg-244{color:#808080;}.xterm-dom-renderer-owner-1 .xterm-bg-244{background-color:#808080;}.xterm-dom-renderer-owner-1 .xterm-fg-245{color:#8a8a8a;}.xterm-dom-renderer-owner-1 .xterm-bg-245{background-color:#8a8a8a;}.xterm-dom-renderer-owner-1 .xterm-fg-246{color:#949494;}.xterm-dom-renderer-owner-1 .xterm-bg-246{background-color:#949494;}.xterm-dom-renderer-owner-1 .xterm-fg-247{color:#9e9e9e;}.xterm-dom-renderer-owner-1 .xterm-bg-247{background-color:#9e9e9e;}.xterm-dom-renderer-owner-1 .xterm-fg-248{color:#a8a8a8;}.xterm-dom-renderer-owner-1 .xterm-bg-248{background-color:#a8a8a8;}.xterm-dom-renderer-owner-1 .xterm-fg-249{color:#b2b2b2;}.xterm-dom-renderer-owner-1 .xterm-bg-249{background-color:#b2b2b2;}.xterm-dom-renderer-owner-1 .xterm-fg-250{color:#bcbcbc;}.xterm-dom-renderer-owner-1 .xterm-bg-250{background-color:#bcbcbc;}.xterm-dom-renderer-owner-1 .xterm-fg-251{color:#c6c6c6;}.xterm-dom-renderer-owner-1 .xterm-bg-251{background-color:#c6c6c6;}.xterm-dom-renderer-owner-1 .xterm-fg-252{color:#d0d0d0;}.xterm-dom-renderer-owner-1 .xterm-bg-252{background-color:#d0d0d0;}.xterm-dom-renderer-owner-1 .xterm-fg-253{color:#dadada;}.xterm-dom-renderer-owner-1 .xterm-bg-253{background-color:#dadada;}.xterm-dom-renderer-owner-1 .xterm-fg-254{color:#e4e4e4;}.xterm-dom-renderer-owner-1 .xterm-bg-254{background-color:#e4e4e4;}.xterm-dom-renderer-owner-1 .xterm-fg-255{color:#eeeeee;}.xterm-dom-renderer-owner-1 .xterm-bg-255{background-color:#eeeeee;}.xterm-dom-renderer-owner-1 .xterm-fg-257{color:#222222;}.xterm-dom-renderer-owner-1 .xterm-bg-257{background-color:#ffffff;}</style><div class="xterm-rows" style="line-height: normal;" aria-hidden="true"><div style="width: 1328px; height: 15px; line-height: 15px; overflow: hidden;"><span>Y</span><span>o</span><span>u</span><span>r</span><span> </span><span>C</span><span>l</span><span>o</span><span>u</span><span>d</span><span> </span><span>P</span><span>l</span><span>a</span><span>t</span><span>f</span><span>o</span><span>r</span><span>m</span><span> </span><span>p</span><span>r</span><span>o</span><span>j</span><span>e</span><span>c</span><span>t</span><span> </span><span>i</span><span>n</span><span> </span><span>t</span><span>h</span><span>i</span><span>s</span><span> </span><span>s</span><span>e</span><span>s</span><span>s</span><span>i</span><span>o</span><span>n</span><span> </span><span>i</span><span>s</span><span> </span><span>s</span><span>e</span><span>t</span><span> </span><span>t</span><span>o</span><span> </span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">e</span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">y</span><span class="xterm-bold xterm-fg-11">-</span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">o</span><span class="xterm-bold xterm-fg-11">t</span><span class="xterm-bold xterm-fg-11">t</span><span class="xterm-bold xterm-fg-11">e</span><span class="xterm-bold xterm-fg-11">r</span><span class="xterm-bold xterm-fg-11">y</span><span class="xterm-bold xterm-fg-11">-</span><span class="xterm-bold xterm-fg-11">3</span><span class="xterm-bold xterm-fg-11">5</span><span class="xterm-bold xterm-fg-11">8</span><span class="xterm-bold xterm-fg-11">8</span><span class="xterm-bold xterm-fg-11">1</span><span class="xterm-bold xterm-fg-11">6</span><span>.</span></div><div style="width: 1328px; height: 15px; line-height: 15px; overflow: hidden;"><span>U</span><span>s</span><span>e</span><span> </span><span>“</span><span>g</span><span>c</span><span>l</span><span>o</span><span>u</span><span>d</span><span> </span><span>c</span><span>o</span><span>n</span><span>f</span><span>i</span><span>g</span><span> </span><span>s</span><span>e</span><span>t</span><span> </span><span>p</span><span>r</span><span>o</span><span>j</span><span>e</span><span>c</span><span>t</span><span> </span><span>[</span><span>P</span><span>R</span><span>O</span><span>J</span><span>E</span><span>C</span><span>T</span><span>_</span><span>I</span><span>D</span><span>]</span><span>”</span><span> </span><span>t</span><span>o</span><span> </span><span>c</span><span>h</span><span>a</span><span>n</span><span>g</span><span>e</span><span> </span><span>t</span><span>o</span><span> </span><span>a</span><span> </span><span>d</span><span>i</span><span>f</span><span>f</span><span>e</span><span>r</span><span>e</span><span>n</span><span>t</span><span> </span><span>p</span><span>r</span><span>o</span><span>j</span><span>e</span><span>c</span><span>t</span><span>.</span></div><div style="width: 1328px; height: 15px; line-height: 15px; overflow: hidden;"><span>a</span><span>z</span><span>a</span><span>m</span><span>a</span><span>t</span><span>e</span><span>r</span><span>g</span><span>a</span><span>s</span><span>h</span><span>o</span><span>v</span><span>9</span><span>5</span><span>8</span><span>@</span><span>c</span><span>l</span><span>o</span><span>u</span><span>d</span><span>s</span><span>h</span><span>e</span><span>l</span><span>l</span><span>:</span><span class="xterm-bold xterm-fg-12">~</span><span class="xterm-bold xterm-fg-12"> </span><span class="xterm-bold xterm-fg-11">(</span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">e</span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">y</span><span class="xterm-bold xterm-fg-11">-</span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">o</span><span class="xterm-bold xterm-fg-11">t</span><span class="xterm-bold xterm-fg-11">t</span><span class="xterm-bold xterm-fg-11">e</span><span class="xterm-bold xterm-fg-11">r</span><span class="xterm-bold xterm-fg-11">y</span><span class="xterm-bold xterm-fg-11">-</span><span class="xterm-bold xterm-fg-11">3</span><span class="xterm-bold xterm-fg-11">5</span><span class="xterm-bold xterm-fg-11">8</span><span class="xterm-bold xterm-fg-11">8</span><span class="xterm-bold xterm-fg-11">1</span><span class="xterm-bold xterm-fg-11">6</span><span class="xterm-bold xterm-fg-11">)</span><span>$</span><span> </span><span>m</span><span>k</span><span>d</span><span>i</span><span>r</span><span> </span><span>e</span><span>x</span><span>0</span><span>0</span></div><div style="width: 1328px; height: 15px; line-height: 15px; overflow: hidden;"><span>a</span><span>z</span><span>a</span><span>m</span><span>a</span><span>t</span><span>e</span><span>r</span><span>g</span><span>a</span><span>s</span><span>h</span><span>o</span><span>v</span><span>9</span><span>5</span><span>8</span><span>@</span><span>c</span><span>l</span><span>o</span><span>u</span><span>d</span><span>s</span><span>h</span><span>e</span><span>l</span><span>l</span><span>:</span><span class="xterm-bold xterm-fg-12">~</span><span class="xterm-bold xterm-fg-12"> </span><span class="xterm-bold xterm-fg-11">(</span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">e</span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">y</span><span class="xterm-bold xterm-fg-11">-</span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">o</span><span class="xterm-bold xterm-fg-11">t</span><span class="xterm-bold xterm-fg-11">t</span><span class="xterm-bold xterm-fg-11">e</span><span class="xterm-bold xterm-fg-11">r</span><span class="xterm-bold xterm-fg-11">y</span><span class="xterm-bold xterm-fg-11">-</span><span class="xterm-bold xterm-fg-11">3</span><span class="xterm-bold xterm-fg-11">5</span><span class="xterm-bold xterm-fg-11">8</span><span class="xterm-bold xterm-fg-11">8</span><span class="xterm-bold xterm-fg-11">1</span><span class="xterm-bold xterm-fg-11">6</span><span class="xterm-bold xterm-fg-11">)</span><span>$</span><span> </span><span>c</span><span>d</span><span> </span><span>e</span><span>x</span><span>0</span><span>0</span></div><div style="width: 1328px; height: 15px; line-height: 15px; overflow: hidden;"><span>a</span><span>z</span><span>a</span><span>m</span><span>a</span><span>t</span><span>e</span><span>r</span><span>g</span><span>a</span><span>s</span><span>h</span><span>o</span><span>v</span><span>9</span><span>5</span><span>8</span><span>@</span><span>c</span><span>l</span><span>o</span><span>u</span><span>d</span><span>s</span><span>h</span><span>e</span><span>l</span><span>l</span><span>:</span><span class="xterm-bold xterm-fg-12">~</span><span class="xterm-bold xterm-fg-12">/</span><span class="xterm-bold xterm-fg-12">e</span><span class="xterm-bold xterm-fg-12">x</span><span class="xterm-bold xterm-fg-12">0</span><span class="xterm-bold xterm-fg-12">0</span><span class="xterm-bold xterm-fg-12"> </span><span class="xterm-bold xterm-fg-11">(</span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">e</span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">y</span><span class="xterm-bold xterm-fg-11">-</span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">o</span><span class="xterm-bold xterm-fg-11">t</span><span class="xterm-bold xterm-fg-11">t</span><span class="xterm-bold xterm-fg-11">e</span><span class="xterm-bold xterm-fg-11">r</span><span class="xterm-bold xterm-fg-11">y</span><span class="xterm-bold xterm-fg-11">-</span><span class="xterm-bold xterm-fg-11">3</span><span class="xterm-bold xterm-fg-11">5</span><span class="xterm-bold xterm-fg-11">8</span><span class="xterm-bold xterm-fg-11">8</span><span class="xterm-bold xterm-fg-11">1</span><span class="xterm-bold xterm-fg-11">6</span><span class="xterm-bold xterm-fg-11">)</span><span>$</span><span> </span><span>t</span><span>o</span><span>u</span><span>c</span><span>h</span><span> </span><span>m</span><span>a</span><span>i</span><span>n</span><span>.</span><span>p</span><span>y</span></div><div style="width: 1328px; height: 15px; line-height: 15px; overflow: hidden;"><span>a</span><span>z</span><span>a</span><span>m</span><span>a</span><span>t</span><span>e</span><span>r</span><span>g</span><span>a</span><span>s</span><span>h</span><span>o</span><span>v</span><span>9</span><span>5</span><span>8</span><span>@</span><span>c</span><span>l</span><span>o</span><span>u</span><span>d</span><span>s</span><span>h</span><span>e</span><span>l</span><span>l</span><span>:</span><span class="xterm-bold xterm-fg-12">~</span><span class="xterm-bold xterm-fg-12">/</span><span class="xterm-bold xterm-fg-12">e</span><span class="xterm-bold xterm-fg-12">x</span><span class="xterm-bold xterm-fg-12">0</span><span class="xterm-bold xterm-fg-12">0</span><span class="xterm-bold xterm-fg-12"> </span><span class="xterm-bold xterm-fg-11">(</span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">e</span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">y</span><span class="xterm-bold xterm-fg-11">-</span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">o</span><span class="xterm-bold xterm-fg-11">t</span><span class="xterm-bold xterm-fg-11">t</span><span class="xterm-bold xterm-fg-11">e</span><span class="xterm-bold xterm-fg-11">r</span><span class="xterm-bold xterm-fg-11">y</span><span class="xterm-bold xterm-fg-11">-</span><span class="xterm-bold xterm-fg-11">3</span><span class="xterm-bold xterm-fg-11">5</span><span class="xterm-bold xterm-fg-11">8</span><span class="xterm-bold xterm-fg-11">8</span><span class="xterm-bold xterm-fg-11">1</span><span class="xterm-bold xterm-fg-11">6</span><span class="xterm-bold xterm-fg-11">)</span><span>$</span><span> </span><span>t</span><span>o</span><span>u</span><span>c</span><span>h</span><span> </span><span>m</span><span>a</span><span>i</span><span>n</span><span>.</span><span>j</span><span>p</span><span>g</span></div><div style="width: 1328px; height: 15px; line-height: 15px; overflow: hidden;"><span>a</span><span>z</span><span>a</span><span>m</span><span>a</span><span>t</span><span>e</span><span>r</span><span>g</span><span>a</span><span>s</span><span>h</span><span>o</span><span>v</span><span>9</span><span>5</span><span>8</span><span>@</span><span>c</span><span>l</span><span>o</span><span>u</span><span>d</span><span>s</span><span>h</span><span>e</span><span>l</span><span>l</span><span>:</span><span class="xterm-bold xterm-fg-12">~</span><span class="xterm-bold xterm-fg-12">/</span><span class="xterm-bold xterm-fg-12">e</span><span class="xterm-bold xterm-fg-12">x</span><span class="xterm-bold xterm-fg-12">0</span><span class="xterm-bold xterm-fg-12">0</span><span class="xterm-bold xterm-fg-12"> </span><span class="xterm-bold xterm-fg-11">(</span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">e</span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">y</span><span class="xterm-bold xterm-fg-11">-</span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">o</span><span class="xterm-bold xterm-fg-11">t</span><span class="xterm-bold xterm-fg-11">t</span><span class="xterm-bold xterm-fg-11">e</span><span class="xterm-bold xterm-fg-11">r</span><span class="xterm-bold xterm-fg-11">y</span><span class="xterm-bold xterm-fg-11">-</span><span class="xterm-bold xterm-fg-11">3</span><span class="xterm-bold xterm-fg-11">5</span><span class="xterm-bold xterm-fg-11">8</span><span class="xterm-bold xterm-fg-11">8</span><span class="xterm-bold xterm-fg-11">1</span><span class="xterm-bold xterm-fg-11">6</span><span class="xterm-bold xterm-fg-11">)</span><span>$</span><span> </span><span>c</span><span>d</span><span> </span><span>.</span><span>.</span></div><div style="width: 1328px; height: 15px; line-height: 15px; overflow: hidden;"><span>a</span><span>z</span><span>a</span><span>m</span><span>a</span><span>t</span><span>e</span><span>r</span><span>g</span><span>a</span><span>s</span><span>h</span><span>o</span><span>v</span><span>9</span><span>5</span><span>8</span><span>@</span><span>c</span><span>l</span><span>o</span><span>u</span><span>d</span><span>s</span><span>h</span><span>e</span><span>l</span><span>l</span><span>:</span><span class="xterm-bold xterm-fg-12">~</span><span class="xterm-bold xterm-fg-12"> </span><span class="xterm-bold xterm-fg-11">(</span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">e</span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">y</span><span class="xterm-bold xterm-fg-11">-</span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">o</span><span class="xterm-bold xterm-fg-11">t</span><span class="xterm-bold xterm-fg-11">t</span><span class="xterm-bold xterm-fg-11">e</span><span class="xterm-bold xterm-fg-11">r</span><span class="xterm-bold xterm-fg-11">y</span><span class="xterm-bold xterm-fg-11">-</span><span class="xterm-bold xterm-fg-11">3</span><span class="xterm-bold xterm-fg-11">5</span><span class="xterm-bold xterm-fg-11">8</span><span class="xterm-bold xterm-fg-11">8</span><span class="xterm-bold xterm-fg-11">1</span><span class="xterm-bold xterm-fg-11">6</span><span class="xterm-bold xterm-fg-11">)</span><span>$</span><span> </span><span>t</span><span>o</span><span>u</span><span>c</span><span>h</span><span> </span><span>p</span><span>h</span><span>o</span><span>s</span><span>y</span><span>.</span><span>j</span><span>p</span><span>g</span></div><div style="width: 1328px; height: 15px; line-height: 15px; overflow: hidden;"><span>a</span><span>z</span><span>a</span><span>m</span><span>a</span><span>t</span><span>e</span><span>r</span><span>g</span><span>a</span><span>s</span><span>h</span><span>o</span><span>v</span><span>9</span><span>5</span><span>8</span><span>@</span><span>c</span><span>l</span><span>o</span><span>u</span><span>d</span><span>s</span><span>h</span><span>e</span><span>l</span><span>l</span><span>:</span><span class="xterm-bold xterm-fg-12">~</span><span class="xterm-bold xterm-fg-12"> </span><span class="xterm-bold xterm-fg-11">(</span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">e</span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">y</span><span class="xterm-bold xterm-fg-11">-</span><span class="xterm-bold xterm-fg-11">p</span><span class="xterm-bold xterm-fg-11">o</span><span class="xterm-bold xterm-fg-11">t</span><span class="xterm-bold xterm-fg-11">t</span><span class="xterm-bold xterm-fg-11">e</span><span class="xterm-bold xterm-fg-11">r</span><span class="xterm-bold xterm-fg-11">y</span><span class="xterm-bold xterm-fg-11">-</span><span class="xterm-bold xterm-fg-11">3</span><span class="xterm-bold xterm-fg-11">5</span><span class="xterm-bold xterm-fg-11">8</span><span class="xterm-bold xterm-fg-11">8</span><span class="xterm-bold xterm-fg-11">1</span><span class="xterm-bold xterm-fg-11">6</span><span class="xterm-bold xterm-fg-11">)</span><span>$</span><span> </span><span class="xterm-cursor xterm-cursor-blink xterm-cursor-block"> </span></div></div><div class="xterm-selection" aria-hidden="true"><div style="height: 15px; top: 105px; left: 560px; width: 768px;"></div><div style="top: 120px; left: 0px; width: 1328px;"></div></div><div class="xterm-decoration-container"></div></div></div></div></div></xterm-terminal><!----></div></xterm-terminal-tab><!----></div></terminal-container></devshell><!----></div><!----></horizontal-split></div></div><div _ngcontent-oyp-c259="" id="walkthrough-container"></div></stand-alone><!----><!----></div><!----></cloud-shell-root><script src="Cloud%20Shell_files/m=cloudshell" nonce=""></script><script nonce="">var CSH_LOAD_T1 = Date.now();</script><div class="cdk-live-announcer-element cdk-visually-hidden" aria-atomic="true" aria-live="polite">Your
+ Cloud Platform project in this session is set to peppy-pottery-358816. 
+                                                                        
+                  </div><iframe style="width: 1px; height: 1px; position: fixed; left: -20px;" aria-hidden="true" src="Cloud%20Shell_files/gapi.html"></iframe><div style="visibility: hidden;" class="cdk-describedby-message-container cdk-visually-hidden"><div id="cdk-describedby-message-oyp-1-2" role="tooltip">More</div><div id="cdk-describedby-message-oyp-1-3" role="tooltip">Close Editor</div><div id="cdk-describedby-message-oyp-1-4" role="tooltip">Close Terminal</div><div id="cdk-describedby-message-oyp-1-5" role="tooltip">Azamat Ergashov azamatergashov958@gmail.com</div><div id="cdk-describedby-message-oyp-1-6" role="tooltip">Maximum number of Cloud Shell sessions open</div><div id="cdk-describedby-message-oyp-1-7" role="tooltip">Open a new tab with project...</div><div id="cdk-describedby-message-oyp-1-8" role="tooltip">Close tab</div></div><iframe style="display: none;"></iframe><style type="text/css" id="spotlight-zoom-animation">@keyframes zoom {
+                                                 to { transform:scale(1); }
+                                               }
+                                               @keyframes pulse {
+                                                 0% { transform:scale(1); }
+                                                 25% { transform:scale(1.1); }
+                                                 100% { transform:scale(1); }
+                                               }</style><div class="cdk-overlay-container"></div></body></html>
